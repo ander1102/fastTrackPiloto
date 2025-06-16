@@ -1,0 +1,55 @@
+.section_1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.section_1_children {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.section_2 {
+  margin: 2rem 0;
+}
+
+.section_3 {
+  margin-top: 3rem;
+}
+
+.saveChangesButton {
+  width: 20% !important;
+}
+
+.deleteButtonButton {
+  background: #dd5b5b;
+  border: none;
+}
+
+.deleteButtonButton:hover {
+  background: #dd5b5b !important;
+}
+
+.icon {
+  font-weight: bold;
+  width: 1rem;
+}
+
+.iconContainer {
+  height: fit-content;
+  padding: 5px 10px !important;
+}
+
+.cancelIcon {
+  background-color: rgb(254, 226, 226);
+  color: rgb(248, 113, 113);
+  border: 2px solid rgb(252, 165, 165);
+}
+
+.checkIcon {
+  background-color: transparent;
+  color: rgb(156, 163, 175);
+  border: 2px solid rgb(156, 163, 175);
+}

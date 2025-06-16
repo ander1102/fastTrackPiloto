@@ -1,0 +1,25 @@
+.gridbreak{
+    height: 0px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.gridarea{
+    height: auto !important;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    font-size: 12px;
+}
+.gridtext{
+    height: 18px;
+    padding: 0px 10px;
+    background-color: #801b25;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.griddivisor{
+    height: 1px;
+    background-color: #CCCCCC;
+}

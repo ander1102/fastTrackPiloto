@@ -1,0 +1,24 @@
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.arrowIcon {
+  width: 32px;
+  height: 32px;
+  color: rgb(107, 147, 245);
+}
+
+.editIcon {
+  color: #000000;
+}
+
+.userButton {
+  background: none;
+  border: none;
+}
+
+.userButton:hover {
+  background: none !important;
+  border: none;
+}

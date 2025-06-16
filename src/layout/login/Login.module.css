@@ -1,0 +1,90 @@
+.LoginContainer {
+  background: #994fa6;
+  padding: 7rem 9rem;
+  width: 50%;
+  min-height: 100vh;
+}
+
+.LogoContainer {
+  width: 50%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.LogoContainerBackground {
+  background-color: #9950a6;
+  background-image: url("/Images/logIn_thunderpay.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: -1;
+}
+
+.linkLandingPage{
+  font-size: 15px;
+  color: #FFF;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: 60px;
+  margin-right: 50px;
+  font-family: 'DM Sans';
+}
+
+.container {
+  display: flex;
+  color: #000000;
+}
+
+.inputs-login{
+  background-color: #1C1C1C !important;
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .LogoContainerBackground {
+    background-color: #9950a6;
+    background-image: url("/Images/logIn_thunderpay.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+  .LoginContainer {
+    padding: 3rem 5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .LoginContainer {
+    padding: 7rem 5rem;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .LoginContainer {
+    padding: 7rem 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+  .LoginContainer {
+    width: 100%;
+  }
+
+  .LogoContainer {
+    display: none;
+  }
+}

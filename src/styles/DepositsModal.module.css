@@ -1,0 +1,18 @@
+.btnDownload{
+  background-color: #6B3374;
+  color:#FFF;
+  border-color: transparent;
+  margin-right: 20px;
+}
+.btnDownload:hover{
+  background-color: #6B3374!important;
+  opacity: 0.9;
+  color:#FFF;
+  border-color: transparent!important;
+}
+
+.createDepositAmmount{
+  background-color: '#F0EFFB'; 
+  flex-direction: row;
+  width: 40%;
+}

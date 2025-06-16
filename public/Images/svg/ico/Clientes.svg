@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="Clientes" transform="translate(0.656 0.41)">
+    <rect id="Rectángulo_5686" data-name="Rectángulo 5686" width="36" height="36" transform="translate(-0.656 -0.41)" fill="none"/>
+    <circle id="Elipse_16911" data-name="Elipse 16911" cx="7.5" cy="7.5" r="7.5" transform="translate(4.344 6.59)" fill="none" stroke="#6a96ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Trazado_27606" data-name="Trazado 27606" d="M35.142,56.254A7.142,7.142,0,1,1,37.08,70.27M16,75.406a12.087,12.087,0,0,1,19.776,0M37.08,70.27a12.071,12.071,0,0,1,9.888,5.135" transform="translate(-13.872 -48.277)" fill="none" stroke="#6a96ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

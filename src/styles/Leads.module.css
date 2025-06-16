@@ -1,0 +1,463 @@
+.leftCol{
+    width: 66.666667%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightCol{
+    width: 33.333333%;
+    padding-left: 12px;
+    padding-right: 10px;
+}
+
+.generalRow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.rowLeftItem{
+    width: 100%;
+    padding-right: 24px;
+
+}
+
+.rowRightItem{
+    width: 100%;
+    padding-right: 23px;
+}
+
+.leadInputText{
+    width: 100%;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.leadInputTitle{
+    color: #050505;
+    font-size: 16px;
+}
+
+.rowRightDoubleItem{
+    width: 100%;
+    display: flex;
+}
+
+.generalRightItem{
+    width: 100%;
+}
+
+.leadStatusDropTitle{
+    color: #1AB8AB;
+    font-size: 16px;
+}
+
+.leadSectionTitle{
+    color: #1AB8AB;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.leadTextArea{
+    height: 125px;
+    min-height: 125px;
+    max-height: 125px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.leadProductosTitle{
+    color: #000000;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.buttonsRow{
+    width: 100%;
+}
+
+.leftbuttonsRow{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-right: 24px;
+}
+
+.rightbuttonsRow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.selectedButton{
+    width: 47%;
+    background-color: #1AB8AB;
+    border: 1px solid #1AB8AB;
+    color: #FFFFFF;
+}
+
+.notselectedButton{
+    width: 47%;
+    background-color: #F7F7F7;
+    border: 1px solid #E1E5E7;
+    color: #888686;
+}
+
+.notselectedButton:hover {
+    background-color: #86dbd2 !important;
+}
+
+.selectedButton:hover {
+    background-color: #1AB8AB !important;
+}
+
+.savebtn{
+    width: 100%;
+    background-color: #343434;
+    color: #ffffff;
+    height: 50px;
+}
+
+.savebtn:hover{
+    background-color: #1f1f1f !important;
+}
+
+.wrapperProducts{
+    display: flex;
+    flex-direction: column;
+}
+.rowItemProduct{
+    display: flex;
+    min-height: 100px;
+    background-color: #F4F4F4;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.rowItemProductSelected{
+    display: flex;
+    min-height: 100px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 0px;
+    background-color: #F0EFFB;
+}
+.rowItemAsset{
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+.subtitle{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.wrapperIndicator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.indicatorTerminal{
+    padding: 0px 20px;
+    background-color: #FFFFFF;
+    border-radius: 13px;
+    color: #5840D1;
+    font-size: 20px;
+}
+
+.wrapperMsi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F4F4F4;
+    height: 100px;
+    width: 350px;
+    max-width: 350px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.wrapperMsiActive{
+    background-color: #F0EFFB;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    height: 100px;
+    width: 350px;
+    max-width: 350px;
+    /* padding: 30px 15px; */
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.hiddenCheckbox[type="checkbox"]{
+    display: none;
+}
+
+.wrapperMsi .hiddenCheckbox:checked ~ .geekmark{
+    background-color: #fff;
+}
+
+.geekmark {
+    height: 20px;
+    width: 20px;
+    margin-right: 24px;
+    background-color: #fff;
+    border: 1px solid #1a1a1a;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wrapperMsiActive .hiddenCheckbox:checked ~ .geekmark::after {
+    display: block;
+}
+
+.wrapperMsiActive .geekmark::after {
+    border: solid #5840D1;
+    border-radius: 25px;
+    overflow: hidden;
+    border-width: 6px 6px 6px 6px;
+}
+.geekmark::after {
+    content: "";
+    /* position: absolute; */
+    display: none;
+}
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    background-color: #2f1d58;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: row;
+}
+.FlexContainer div {
+    width: 400px;
+    height: 150px;
+    margin: 20px;
+    background-color: lightblue;
+}
+
+
+/* 
+    Cotización
+*/
+.quote{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F4F4F4;
+    height: 100px;
+    max-width: 450px;
+    /* padding: 30px 15px; */
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.quoteAct{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F4F4F4;
+    height: 100px;
+    width: 350px;
+    max-width: 450px;
+    /* padding: 30px 15px; */
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+.geekmarkTerm {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #1a1a1a;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.geekmarkTerm::after {
+    content: "";
+    /* position: absolute; */
+    display: none;
+}
+.terms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.terms .hiddenCheckbox:checked ~ .geekmarkTerm{
+    background-color: #fff;
+}
+
+.termsAct{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.termsAct .hiddenCheckbox:checked ~ .geekmarkTerm::after {
+    display: block;
+}
+
+.termsAct .geekmarkTerm::after {
+    border: solid #5840D1;
+    border-radius: 25px;
+    overflow: hidden;
+    border-width: 6px 6px 6px 6px;
+}
+
+.indicatorQuantity{
+    background-color: #FFF;
+    border-radius: 13px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 100px;
+    color: #5840D1
+}
+.btnIncreaseQuantity{
+    padding: 0px 15px;
+}
+
+.inputComisionInternacional{
+    width: 49%;
+    padding-right: 15px;
+}
+
+.subWrapperCotizacion{
+    width: 50%;
+}
+
+.newLeadButton{
+    background-color: #5840D1;
+    border-radius: 24px;
+    padding: 13px 80px;
+    border: none;
+    font-family: "Urbanist SemiBold", sans-serif;
+}
+
+.newLeadButton:hover{
+    background-color: #5840D1!important;
+    border-radius: 24px;
+    padding: 13px 80px;
+    border: none;
+}
+
+.btnNewLead{
+    font-size: 15px;
+    padding: 12px 30px;
+    background-color: #23CBB8;
+    border: none;
+}
+
+.btnNewLead:hover{
+    font-size: 15px;
+    padding: 12px 30px;
+    background-color: #23CBB8!important;
+    border: none;
+}
+
+.leadRefLinkBtn{
+    background-color: #5840D1;
+    border-radius: 5px;
+    border: none;
+    font-family: "Urbanist SemiBold", sans-serif;
+}
+
+.leadRefLinkBtn:hover{
+    background-color: #5840D1!important;
+    border-radius: 5px;
+    border: none;
+}
+
+.leadAssignBtn{
+    margin-right: 10px;
+    background-color: #5840D1;
+    border-radius: 5px;
+    border: none;
+    font-family: "Urbanist SemiBold", sans-serif;
+}
+
+.leadAssignBtn:hover{
+    background-color: #5840D1!important;
+    border-radius: 5px;
+    border: none;
+}
+
+.leadRegresarBtn{
+    margin-right: 10px;
+    background-color: #AFAFAF;
+    border-radius: 5px;
+    border: none;
+    font-family: "Urbanist SemiBold", sans-serif;
+}
+
+.leadRegresarBtn:hover{
+    background-color: #AFAFAF!important;
+    border-radius: 5px;
+    border: none;
+}
+.referenceNumber{
+    color:#000000
+}
+
+.referenceNumber:hover{
+    color:#23CBB8;
+    text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+
+    .wrapperCotizacion{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .subWrapperCotizacion{
+        width: 100%;
+    }
+}
+

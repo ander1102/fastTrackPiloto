@@ -1,0 +1,153 @@
+.miniButton {
+  background: transparent !important;
+  display: flex !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  border: 1px solid #626262 !important;
+  color: #626262 !important;
+  width: 21px !important;
+  height: 21px !important;
+  padding: 0 !important;
+}
+.miniButtonIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.miniButtonPrimeIcon {
+  font-size: 0.75rem !important;
+}
+.iconButton {
+  background: none !important;
+  border: none !important;
+  padding: 0;
+}
+.button {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+.ButtonExcel {
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: black !important;
+  width: 65px;
+  height: 48px;
+  margin-bottom: 0.75rem;
+  margin-left: 10px;
+  border-radius: 5px !important;
+}
+.ButtonExcelClients {
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: black !important;
+  width: 65px;
+  height: 40px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  border-radius: 5px !important;
+}
+.ButtonExcelTxs {
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: black !important;
+  width: 65px;
+  height: 48px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  border-radius: 5px !important;
+}
+.ButtonExcelText {
+  font-size: 12px;
+}
+.ButtonPrimary {
+  background-color: var(--primary-color) !important;
+  height: 48px!important;
+  min-width: 200px!important;
+}
+.ButtonDownload {
+  background-color: #343434 !important;
+  color: white !important;
+}
+.ButtonConfirm {
+  background-color: #6B3374 !important;
+  color: white !important;
+  min-width: 185px;
+  height: 45px;
+  border-radius: 10px !important;
+  font-weight: 300 !important;
+}
+
+.ButtonReturn {
+  background-color: #afafaf !important;
+  border: 1px solid #afafaf !important;
+  color: white !important;
+  min-width: 185px;
+  height: 45px;
+  border-radius: 10px !important;
+  font-weight: 300 !important;
+}
+
+.ButtonReturnLight {
+  background-color: var(--grey-2-color) !important;
+  border: 1px solid var(--grey-2-color) !important;
+  color: var(--black-3-color) !important;
+  min-width: 185px;
+  height: 45px;
+}
+
+.ButtonDetails {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.ButtonNewSecundary {
+  background-color: #6B3374 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  min-width: 200px !important;
+  height: 48px !important;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.ButtonNew {
+  background-color: #6B3374 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  width: 200px !important;
+  height: 48px !important;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.ButtonDeposit {
+  background-color: #343434 !important;
+  border: none !important;
+  width: 135px !important;
+  height: 44px !important;
+}
+.ButtonAction {
+  background-color: #343434 !important;
+  border: none !important;
+  width: 200px !important;
+  height: 48px !important;
+}
+.ButtonDeny {
+  background-color: #d82b2c !important;
+  border: none !important;
+  min-width: 200px !important;
+  height: 48px !important;
+}
+.leadsDetailButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  width: 48px;
+  background-color: transparent !important;
+  border: none !important;
+}

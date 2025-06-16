@@ -1,0 +1,141 @@
+.Navcontainer {
+  background-color: rgb(237, 242, 255);
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  min-width: 100%;
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  width: -webkit-fill-available;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.newcontainer {
+  width: -webkit-fill-available;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #EFEDFA;
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(219, 234, 254);
+  cursor: pointer;
+  height: 40px;
+}
+
+.menuItems::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f1f1f1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menuItems:hover::-webkit-scrollbar,
+.menuItems:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menuItems::-webkit-scrollbar-thumb {
+  opacity: 0;
+  visibility: hidden;
+  background-color: #6996ff;
+}
+
+.itemsContainer {
+  margin-top: 1rem;
+}
+
+.itemsTitle {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 8px 30px;
+}
+
+
+.logoContainer {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  box-shadow: none !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+  background-color: #292B2B!important;
+}
+
+.navIcons {
+  font-size: 1.7rem;
+  flex: 1;
+  text-align: center;
+}
+
+.navIconsSVG {
+  width: 1.75rem;
+  margin: auto;
+  display: inline-block;
+  height: 1.2rem;
+}
+
+.navConfigurationSVG {
+  width: 1.75rem !important;
+  height: 1.5rem !important;
+}
+
+.navLogoutSVG {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navMenuItemTitle {
+  flex: 2;
+  color: #a5a9be;
+}
+
+.navMenuItemTitleActive {
+  flex: 2;
+  color:#FFF;
+  /* color: #5840D1; */
+}
+
+.pathLessContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #9950A6;
+}
+
+.pathLessContainerIcon {
+  padding-right: 16px;
+  position: relative;
+  left: -4px;
+  
+}
+
+.btnModalLogout {
+  color: #FFF;
+  background-color: #6B3374!important;
+  border-color: transparent;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .menuMiniScroll {
+    width: auto;
+  }
+}

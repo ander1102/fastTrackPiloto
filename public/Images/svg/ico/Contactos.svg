@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g id="Contactos" transform="translate(-946 -121)">
+    <g id="Rectángulo_5793" data-name="Rectángulo 5793" transform="translate(946 121)" fill="none" stroke="#17b8ab" stroke-width="1.5">
+      <rect width="35" height="35" rx="5" stroke="none"/>
+      <rect x="0.75" y="0.75" width="33.5" height="33.5" rx="4.25" fill="none"/>
+    </g>
+    <line id="Línea_658" data-name="Línea 658" y2="32" transform="translate(969.5 122.5)" fill="none" stroke="#17b8ab" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="Línea_659" data-name="Línea 659" x2="10" transform="translate(969.5 134.5)" fill="none" stroke="#17b8ab" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="Línea_660" data-name="Línea 660" x2="10" transform="translate(969.5 143.5)" fill="none" stroke="#17b8ab" stroke-linecap="round" stroke-width="1.5"/>
+    <g id="Persona_icon" data-name="Persona icon" transform="translate(-256.094 -207.004)">
+      <circle id="Elipse_16922" data-name="Elipse 16922" cx="5.48" cy="5.48" r="5.48" transform="translate(1208.402 338)" fill="none" stroke="#17b8ab" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_27854" data-name="Trazado 27854" d="M16,74.023a8.831,8.831,0,0,1,14.449,0m8.179,0" transform="translate(1190.784 278.984)" fill="none" stroke="#17b8ab" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

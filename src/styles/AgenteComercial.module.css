@@ -1,0 +1,126 @@
+.wrapperFilter{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.titleHeaderNew{
+  color: #000;
+  font-size: 30.609px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.wrapperBackNavigation{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  width: 40%;
+}
+.inputFile{
+  background-color: #F1EFFF;
+  border-color: #5840D1;
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 3px;
+  width: 70%;
+}
+.inputFileError{
+  background-color: #FEE;
+  border-color: #FF5758;
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 3px;
+  width: 70%;
+}
+
+.buttonConfirmModal{
+  background-color: #000;
+  color: #FFF;
+  border-color: transparent;
+  padding: 10px 40px;
+  margin: 0px 10px;
+}
+
+.buttonConfirmModal:hover{
+  background-color: #000!important;
+  color: #FFF;
+  border-color: transparent !important;
+  padding: 10px 40px;
+  margin: 0px 10px;
+}
+
+.buttonCloseModal{
+  background-color: #AFAFAF;
+  border-color: transparent;
+  color: #FFF;
+  padding: 10px 40px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+.buttonCloseModal:hover{
+  background-color: #AFAFAF !important;
+  border-color: transparent !important;
+  color: #FFF;
+  padding: 10px 40px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+.btnSaveSeller {
+  background-color: #5840D1;
+  border-color: transparent;
+  color: #FFF;
+  padding: 10px 55px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+.btnSaveSeller:hover {
+  background-color: #5840D1!important;
+  border-color: transparent!important;
+  opacity: 0.8;
+  color: #FFF;
+  padding: 10px 55px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+.deleteSeller{
+  padding: 10px 40px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+.btnDeposit {
+  background-color: #5840D1;
+  border-color: transparent;
+  color: #FFF;
+  padding: 10px 35px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+.btnDeposit:hover {
+  background-color: #5840D1!important;
+  border-color: transparent!important;
+  opacity: 0.8;
+  color: #FFF;
+  padding: 10px 35px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+
+.submitDeposit{
+  background-color: #343434!important;
+  border-color: #343434!important;
+  padding: 10px 25px;
+}
+
+.submitDeposit:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}

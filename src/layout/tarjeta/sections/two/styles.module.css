@@ -1,0 +1,11 @@
+.transactionTitle {
+  font-size: 14px;
+  color: #363636;
+  font-weight: 500;
+}
+
+.transactionDescription {
+  font-size: 14px;
+  color: #989898;
+  min-height: 20px;
+}

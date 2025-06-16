@@ -1,0 +1,117 @@
+.Modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+
+.ModalBackground {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(2px);
+}
+
+.modalTrasactions{
+  background-color: red;
+}
+.modalPrimaryButton {
+  background: #4e80ee !important;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.modalDangerButton {
+  background: #dd5b5b !important;
+  border: none;
+  border-color: transparent!important;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.modalDangerButton:hover {
+  opacity: 0.9;
+}
+
+.modalOutlineButton {
+  background: #343434 !important;
+  border: none;
+  border-color: transparent!important;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+}
+
+.modalOutlineButton:hover {
+  color: #FFF !important;
+  opacity: 0.8;
+}
+
+.cancelStatusBtn{
+  width: 48%;
+  background-color: #AFAFAF !important;
+  border: 1px solid #AFAFAF !important;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px !important;
+}
+
+.confirmStatusBtn{
+  width: 48%;
+  background-color: #1AB8AB !important;
+  border: 1px solid #1AB8AB !important;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px !important;
+}
+
+.noCalificadoStatusBtn{
+  width: 48%;
+  background-color: #312F2F !important;
+  border: 1px solid #312F2F !important;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px !important;
+}
+
+.backIndexBtn{
+  color: #FFF;
+  background-color: #343434!important;
+  border-color: transparent!important;
+  padding: 10px 50px!important;
+  border-radius:5px !important;
+}
+
+.backIndexBtn:hover{
+  opacity: 0.9;
+}
+
+.createDepositAmmount{
+  background-color: #FAF5FB; 
+  flex-direction: row;
+  display: flex;
+  width: 40%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.spanPurpleColor{
+  color: #6B3374;
+  font-size: 16px;
+}
+
+#deposits-table > div > div > table >tbody > tr.p-highlight{
+  background: red!important;
+}
+
+.p-datatable .p-datatable-tbody > tr.p-highlight{
+  background: red!important;
+}
