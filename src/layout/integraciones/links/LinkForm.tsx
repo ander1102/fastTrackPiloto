@@ -230,7 +230,7 @@ export function LinkForm({ isLinkPago = false }: LinkFormProps) {
 
       <Button
         className={`!w-44 !h-10 !mt-5 !rounded-xl self-center !text-sm hover:opacity-90 ${
-          isLinkPago ? "!bg-[#6B3374]" : "!bg-[#6B3374]"
+          isLinkPago ? "!bg-primary-color" : "!bg-primary-color"
         }`}
         onClick={generateLink}
       >

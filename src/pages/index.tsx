@@ -32,8 +32,8 @@ export default function Home() {
   // const [email, setEmail] = useState<any>("test@centumpay.com");
   // const [password, setPassword] = useState<string>("Admin123");
 
-  const [email, setEmail] = useState<any>("hola@thunderpay.com");
-  const [password, setPassword] = useState<string>("Admin123");
+  const [email, setEmail] = useState<any>("hola@cohetepay.com");
+  const [password, setPassword] = useState<string>("Admin.123");
 
   const [remember, setRemember] = useState<boolean | undefined>(false);
   const [loading, setLoading] = useState(false);
@@ -168,7 +168,7 @@ export default function Home() {
     <>
       <Head>
         <title>Thunderpay</title>
-        <meta name="description" content="Efevoo Pay Agregador" />
+        <meta name="description" content="Thunderpay" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/mini2.png" />
       </Head>
@@ -216,16 +216,15 @@ export default function Home() {
               />
               <label
                 htmlFor="rememberme"
-                className="text-sm"
-                style={{ color: "#FFF", marginLeft: 8 }}
+                className="text-sm text-light ml-[8px]"
               >
                 Recuérdame
               </label>
             </div>
             <Link
               href="/forgotpassword"
-              className="ml-2 text-sm text-right cursor-pointer underline"
-              style={{ color: "#FFF", fontFamily: 'DM Sans' }}
+              className="ml-2 text-sm text-right text-light cursor-pointer underline"
+              // style={{ color: "#FFF", fontFamily: 'DM Sans' }}
             >
               Olvidé mi contraseña
             </Link>
@@ -239,12 +238,11 @@ export default function Home() {
               paddingBottom: 13,
               textAlign: "center",
               justifyContent: "center",
-              backgroundColor: "#6B3374",
-              color: '#FFF',
               borderRadius: 25,
               width: 188.5,
               fontFamily: "urbanist_bold",
             }}
+            className="!bg-primary-color text-light"
             loading={loading}
             disabled={hasDisabled}
             onClick={handleSubmit}

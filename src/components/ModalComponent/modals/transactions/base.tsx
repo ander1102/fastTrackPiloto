@@ -51,7 +51,7 @@ export default function TransactionModalBase({
             <img src={imageSrc} width={50} height={50} alt="" />{" "}
           </div>
 
-          <div className="text-2xl text-center text-[#6B3374] mb-2">{title}</div>
+          <div className="text-2xl text-center text-primary-color mb-2">{title}</div>
 
           <div className="bg-white p-5 relative mb-8">
             <div className="pb-5">

@@ -18,7 +18,7 @@ export function IntegrationLinks({
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
           <picture
             className={`w-20 h-20 p-[10px] rounded-full ${
-              title === "Link de Pago" ? "bg-[#6B3374]" : "bg-[#6B3374]"
+              title === "Link de Pago" ? "bg-primary-color" : "bg-primary-color"
             }`}
           >
             <img alt="" src={imagePath} />
@@ -32,8 +32,8 @@ export function IntegrationLinks({
 
       <section className="w-full flex items-center justify-center">
         <OneLineAccordion
-          iconColor={ "#6B3374"}
-          bgColor={"#FAF5FB"}
+          // iconColor={"bg-primary-color"}
+          // bgColor={"#FAF5FB"}
         >
           <LinkForm isLinkPago={title === "Link de Pago"} />
         </OneLineAccordion>

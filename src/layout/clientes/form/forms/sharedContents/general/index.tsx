@@ -6,7 +6,7 @@ export default function Content() {
   const { type } = useContext(ClientFormContext);
   return (
     <>
-      <p className="text-[#6B3374] text-xl font-medium mb-5">
+      <p className="text-primary-color text-xl font-medium mb-5">
         Detalles del comercio
       </p>
 

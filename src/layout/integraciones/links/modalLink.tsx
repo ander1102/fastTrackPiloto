@@ -69,7 +69,7 @@ function modalLink({
       <div className="mx-auto sm:w-[448px] flex flex-col justify-center items-center gap-5 sm:gap-10">
         <canvas ref={canvasDownloadRef} className="hidden" />
         <picture
-          className={`w-16 h-16 p-3 rounded-full flex justify-center bg-[#6b3374]`}
+          className={`w-16 h-16 p-3 rounded-full flex justify-center bg-primary-color`}
         >
           <Image
             alt=""
@@ -95,7 +95,7 @@ function modalLink({
         </picture>
 
         <Button
-          className="w-56 h-12 !p-0 !bg-[#6b3374] text-[#FFF] !rounded-md flex justify-center items-center gap-3 enabled:hover:opacity-80"
+          className="w-56 h-12 !p-0 !bg-primary-color text-light !rounded-md flex justify-center items-center gap-3 enabled:hover:opacity-80"
           onClick={copyLink}
         >
           <span className={`text-lg ${textClass}`}>Copiar enlace</span>

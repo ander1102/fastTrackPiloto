@@ -19,8 +19,8 @@
   }
 
   .p-button.button-save {
-    @apply w-48 h-12 flex bg-[#6B3374] text-white font-light
-    hover:enabled:bg-[#6B3374] hover:enabled:opacity-70;
+    @apply w-48 h-12 flex bg-primary-color text-white font-light
+    hover:enabled:bg-primary-color hover:enabled:opacity-70;
   }
 
   .p-button.button-secondary {
@@ -161,9 +161,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --primary-color: #1C1C1C !important;
-  --secondary-color: #a499de !important;
-  --tertiary-color: #B8DAD7 !important;
+  --primary-color: #f44336 !important;
+  --secondary-color: #1b31ef !important;
+  --tertiary-color: #2ef203 !important;
   --deny-color: #f44336 !important;
   --white-color: #ffffff !important;
   --grey-1-color: #707070 !important;
@@ -235,11 +235,11 @@ a {
   text-wrap: balance;
 }
 .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
-  border-color: #6B3374 !important;
-  color: #6B3374 !important;
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
 .p-tabview .p-tabview-nav .p-tabview-ink-bar {
-  background-color: #6B3374 !important;
+  background-color: var(--primary-color) !important;
   height: 3px !important;
 }
 .p-tab > .p-tabview-nav-container {
@@ -376,7 +376,7 @@ a {
 }
 
 .p-sidebar {
-  background: #6B3374!important;
+  background: var(--primary-color)!important;
 }
 
 .p-overlaypanel .p-overlaypanel-content {
@@ -408,7 +408,7 @@ a {
 }
 
 .myCalendarButton {
-  color: #6B3374 !important;
+  color: var(--primary-color) !important;
   background: #fff !important;
   border: 1px solid #ced4da !important;
   border-radius: 6px;
@@ -427,7 +427,7 @@ a {
 }
 
 .myNewCalendarButton {
-  color: #6B3374 !important;
+  color: var(--primary-color) !important;
   background: #fff !important;
   border: 1px solid #b8afe6 !important;
   border-radius: 6px;
@@ -519,14 +519,14 @@ a {
   width: 100%;
 }
 .datatable-custom .p-column-header-content {
-  color: #6B3374;
+  color: var(--primary-color);
 }
 .datatable-custom .p-datatable-tbody > tr > td {
   padding: 15px 10px !important;
 }
 .datatable-custom .p-datatable-thead > tr > th {
   background-color: #FAF5FB !important;
-  color: #6B3374!important;
+  color: var(--primary-color)!important;
   border: none !important;
   padding: 0px !important;
 }
@@ -560,14 +560,14 @@ a {
   .p-paginator-page.p-highlight {
   background: #FAF5FB !important;
   border-color: none !important;
-  color: #6B3374 !important;
+  color: var(--primary-color) !important;
 }
 
 .datatable-custom .p-paginator .p-paginator-first,
 .datatable-custom .p-paginator .p-paginator-prev,
 .datatable-custom .p-paginator .p-paginator-next,
 .datatable-custom .p-paginator .p-paginator-last {
-  color: #6B3374 !important;
+  color: var(--primary-color) !important;
 }
 
 .datatable-custom .p-paginator .p-paginator-pages .p-paginator-page {
@@ -575,7 +575,7 @@ a {
 }
 
 .p-dropdown-trigger, .p-multiselect-trigger{
-  color: #6B3374 !important;
+  color: var(--primary-color) !important;
 }
 
 .datatable-custom .p-datatable-thead tr th:last-child .p-column-header-content {
@@ -633,7 +633,6 @@ a {
 .p-checkbox .p-checkbox-box {
   width: 18px !important;
   height: 18px !important;
-  /* background-color: #1c1c1c; */
 }
 
 #rememberme > .p-checkbox-box{
@@ -648,21 +647,21 @@ border-color: transparent!important;
 }
 
 .p-checkbox .p-checkbox-box.p-highlight {
-  border-color: #6B3374!important;
-  background: #6B3374 !important;
+  border-color: var(--primary-color)!important;
+  background: var(--primary-color) !important;
 }
 
 .p-checkbox.link-pago .p-checkbox-box.p-highlight {
   width: 22px !important;
   height: 22px !important;
-  border-color: #6B3374 !important;
-  background: #6B3374 !important;
+  border-color: var(--primary-color) !important;
+  background: var(--primary-color) !important;
 }
 .p-checkbox.link-negocio .p-checkbox-box.p-highlight {
   width: 22px !important;
   height: 22px !important;
-  border-color: #6B3374 !important;
-  background: #6B3374 !important;
+  border-color: var(--primary-color) !important;
+  background: var(--primary-color) !important;
 }
 
 .toast-container.jsx-3130614401 {
@@ -672,7 +671,7 @@ border-color: transparent!important;
 
 .p-calendar-w-btn-right .p-datepicker-trigger {
   background-color: transparent !important;
-  color: #6B3374 !important;
+  color: var(--primary-color) !important;
   border: 1px solid #B8C8F7;
   border-left: none;
   height: 40px;
@@ -887,7 +886,7 @@ border-color: transparent!important;
 }
 .buttons-check .p-button-info.active {
   background: #E4EDF7 !important;
-  border: 1px solid #BA81C4 !important;
+  border: 1px solid var(--tertiary-color) !important;
 }
 .buttons-check .p-button-danger.active {
   background: #fdc9c9 !important;
@@ -936,7 +935,7 @@ border-color: transparent!important;
 
 .filters-item .p-dropdown,
 .filters-item .p-multiselect {
-  color: red !important;
+  /* color: red !important; */
   border: 1px solid #ced4da !important;
   border-radius: 10px;
   height: 48px;
@@ -1063,7 +1062,7 @@ border-color: transparent!important;
 }
 .buttons-check .p-button-info.active {
   background: #FAF5FB !important;
-  border: 1px solid #BA81C4 !important;
+  border: 1px solid var(--tertiary-color) !important;
 }
 .buttons-check .p-button-danger.active {
   background: #fdc9c9 !important;
@@ -1086,7 +1085,7 @@ border-color: transparent!important;
 
 .validaBtn {
   border-radius: 6px !important;
-  background-color: #6B3374 !important;
+  background-color: var(--primary-color) !important;
   width: 20%;
   height: 50px !important;
 }
@@ -1125,7 +1124,7 @@ border-color: transparent!important;
 .nav-mini {
   box-shadow: none;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #6B3374;
+  background-color: var(--primary-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -1275,7 +1274,7 @@ border-color: transparent!important;
 }
 
 .p-selectbutton .p-button.p-highlight {
-  background: #6B3374 !important;
+  background: var(--primary-color) !important;
   border-color: transparent !important;
 }
 #representantes > .p-tabview .p-tabview-panels {
@@ -1314,7 +1313,7 @@ border-color: transparent!important;
   > tr
   > th {
   background: #FAF5FB !important;
-  border-bottom: 1px solid #6B3374 !important;
+  border-bottom: 1px solid var(--primary-color) !important;
 }
 
 #deposit-details-yellow
@@ -1339,8 +1338,8 @@ border-color: transparent!important;
   > .p-datatable-thead
   > tr
   > th {
-  background: #6B3374 !important;
-  border-bottom: 1px solid #6B3374 !important;
+  background: var(--primary-color) !important;
+  border-bottom: 1px solid var(--primary-color) !important;
 }
 
 #deposit-details
@@ -1351,7 +1350,7 @@ border-color: transparent!important;
   > th
   > .p-column-header-content
   > .p-column-title {
-  color: #6B3374;
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
 }
@@ -1362,7 +1361,7 @@ border-color: transparent!important;
   > .p-datatable-thead
   > tr
   > th {
-  border-bottom: 1px solid #6B3374 !important;
+  border-bottom: 1px solid var(--primary-color) !important;
   background: #FAF5FB !important;
 }
 
@@ -1374,7 +1373,7 @@ border-color: transparent!important;
   > th
   > .p-column-header-content
   > .p-column-title {
-  color: #6B3374;
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 12px;
 }
@@ -1405,7 +1404,7 @@ border-color: transparent!important;
 }
 
 .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
-  background: #6B3374!important;
+  background: var(--primary-color)!important;
 }
 
 .inputs-login{

@@ -110,7 +110,7 @@ export default function SucursalesForm({
           <div className="mt-[40px]">
             {((isNew && permission.create) || permission.update) &&(
                 <ButtonAction
-                  className="!bg-[#6B3374]"
+                  className="!bg-primary-color"
                   onClick={onSubmit}
                   disabled={disableButton}
                   label="Guardar cambios"

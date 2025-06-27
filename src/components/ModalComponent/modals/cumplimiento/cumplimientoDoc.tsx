@@ -67,7 +67,7 @@ function cumplimientoDoc({
         focusOnShow={false}
         onHide={handleClose}
         headerStyle={{
-            color: "#6B3374",
+            color: "var(--primary-color)",
             paddingBottom: 20,
         }}
         dismissableMask
@@ -101,10 +101,10 @@ function cumplimientoDoc({
             <div className="flex justify-between w-full mt-5">
                 <div className="w-1/2">
                     <p className={"text-md"}>Documentación:</p>
-                    <p className={"text-sm text-[#6B3374]"}>{getDocName(item?.name)}</p>
+                    <p className={"text-sm text-primary-color"}>{getDocName(item?.name)}</p>
                 </div>
                 <div className="w-1/2 flex flex-col justify-end">
-                    <i className="pi pi-download text-right text-[#6B3374] cursor-pointer" onClick={()=>downloadDocument(imgBase64, item.docType.toLowerCase(), item.name)}  />
+                    <i className="pi pi-download text-right text-primary-color cursor-pointer" onClick={()=>downloadDocument(imgBase64, item.docType.toLowerCase(), item.name)}  />
                 </div>
             </div>
         </div>

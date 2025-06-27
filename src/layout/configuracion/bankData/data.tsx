@@ -130,7 +130,7 @@ export default function BankDataConfiguration({ user }: UserProps) {
       <Grid sm={1} md={2} lg={2} gap={5}>
         <section className="flex items-center gap-10 mt-3">
           <div className="flex flex-col">
-            <span style={{color: '#6B3374'}}>Notificación de depósitos</span>
+            <span style={{color: 'var(--primary-color)'}}>Notificación de depósitos</span>
             <span className="text-light-gray-300">
               Recibir correos cuando se deposite dinero en tu cuenta bancaria
             </span>
@@ -139,7 +139,7 @@ export default function BankDataConfiguration({ user }: UserProps) {
       </Grid>
       <div className="flex items-center gap-2 bg-light-blue-100 py-5 rounded">
         <LoaderCheckBox checked={enable} onChange={handleOnchange} />
-        <span style={{color: '#6B3374'}}>Habilitar</span>
+        <span style={{color: 'var(--primary-color)'}}>Habilitar</span>
       </div>
       
         <div className="flex items-center gap-5">
@@ -147,7 +147,7 @@ export default function BankDataConfiguration({ user }: UserProps) {
             disabled={_isEmpty}
             onClick={onSubmit}
             className="custom-button custom-button-primary mt-5"
-            style={{backgroundColor: '#6B3374'}}
+            style={{backgroundColor: 'var(--primary-color)'}}
           >
             {loading ? <i className="pi pi-spin pi-spinner" /> : "Guardar"}
           </button>

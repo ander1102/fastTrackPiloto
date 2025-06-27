@@ -20,7 +20,7 @@ const FIELD_AMEX = getNameField("ventaLineaAMEX");
 export default function ventaLinea() {
   return (
     <>
-      <p className="text-[#6B3374] text-xl font-medium mb-5">
+      <p className="text-primary-color text-xl font-medium mb-5">
         Venta en linea
       </p>
       <div className="flex justify-between items-center w-full">

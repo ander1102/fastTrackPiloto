@@ -27,7 +27,7 @@ export default function ClientContactos({
   let enClientes = router.pathname.includes('/dashboard/clientes')
   return (
     <>
-      <p className="text-black-500 text-lg mb-5" style={{color: '#6B3374', fontSize: '20px', fontWeight: 500}}>Contactos</p>
+      <p className="text-black-500 text-lg mb-5" style={{color: 'var(--primary-color)', fontSize: '20px', fontWeight: 500}}>Contactos</p>
       <TabView id="expedienteRepresentantes">
         {values.infoContactos
           ? values.infoContactos.map((contact: any, index: number) => {

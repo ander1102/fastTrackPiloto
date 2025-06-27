@@ -115,7 +115,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #9950A6;
+  background-color: var(--secondary-color);
 }
 
 .pathLessContainerIcon {
@@ -127,7 +127,7 @@
 
 .btnModalLogout {
   color: #FFF;
-  background-color: #6B3374!important;
+  background-color: var(--primary-color)!important;
   border-color: transparent;
   padding: 10px 20px;
   border-radius: 4px;

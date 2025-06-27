@@ -95,7 +95,7 @@ export default function Operaciones() {
   const isNew = clientProps.isNew;
   return (
     <>
-      <p className="text-[#6B3374] text-xl font-medium mb-5">
+      <p className="text-primary-color text-xl font-medium mb-5">
         Datos de operaciones con tarjetas
       </p>
       <Grid lg={3} md={3} sm={1}>
@@ -128,7 +128,7 @@ export default function Operaciones() {
             <ClientField field="minimo3DS" />
           </Grid>
 
-          <p className="text-[#6B3374] text-xl font-medium mb-5">
+          <p className="text-primary-color text-xl font-medium mb-5">
             Datos de cuenta bancaria
           </p>
           <Grid sm={2} md={2} lg={2} gap={3}>

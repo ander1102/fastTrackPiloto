@@ -76,7 +76,7 @@ export function PagoContainer(props: checkoutProps) {
               ></div>
             ) : (
               <div
-                className="bg-[#6B3374] rounded-full flex justify-center items-center text-[#FFF] text-2xl"
+                className="bg-primary-color rounded-full flex justify-center items-center text-[#FFF] text-2xl"
                 style={{ width: "50px", height: "50px" }}
               >
                 <p className="flex text-center align-middle text-md ">
@@ -120,7 +120,7 @@ export function PagoContainer(props: checkoutProps) {
           </FormItem>
           <div className="flex justify-center w-full mt-9">
             <ButtonLoader
-              className="w-3/5 flex justify-center items-center !bg-[#6B3374] rounded text-white font-bold h-12"
+              className="w-3/5 flex justify-center items-center !bg-primary-color rounded text-white font-bold h-12"
               loading={loading}
               disabled={disabled}
               onClick={() => sendInfo()}

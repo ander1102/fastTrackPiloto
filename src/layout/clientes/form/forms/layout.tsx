@@ -77,7 +77,7 @@ const Title = memo(
               </div>
             )} */}
           <Button
-            className="!bg-[#6B3374] w-[200px] flex justify-center"
+            className="!bg-primary-color w-[200px] flex justify-center"
             loading={formProps.formik.isSubmitting}
             disabled={formProps.formik.isSubmitting}
             onClick={onSave}

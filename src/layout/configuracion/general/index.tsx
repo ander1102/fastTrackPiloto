@@ -136,7 +136,7 @@ export default function ConfigurationGeneralTab({ user }: UserProps) {
 
   return (
     <div className="container-form-tab">
-      <h3 className="text-xl text-[#6B3374] mb-5 font-medium">
+      <h3 className="text-xl text-primary-color mb-5 font-medium">
         Configuración general
       </h3>
       <Grid sm={1} md={1} lg={2} gap={20}>

@@ -250,7 +250,7 @@ function CreateDeposit({
     <Dialog
       header={
         <div className="dialog-header">
-          <h2 className="dialog-title" style={{color: '#6B3374'}}>Nuevo depósito</h2>
+          <h2 className="dialog-title" style={{color: 'var(--primary-color)'}}>Nuevo depósito</h2>
         </div>
       }
       visible={show}
@@ -354,7 +354,7 @@ function CreateDeposit({
           
           <div style={{display: 'flex', justifyContent: 'flex-end', marginTop: 35}}>
             <ButtonLoader
-              style={{background:'#6B3374', border:'#6B3374', width:200}}
+              style={{background:'var(--primary-color)', border:'var(--primary-color)', width:200}}
               loading={isLoading}
               disabled={Boolean(!valueCurrentClientId) || selectedDeposit?.length < 1}
               onClick={handleSubmit}

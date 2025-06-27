@@ -94,7 +94,7 @@ export default function InputFile(props: TextInputProps) {
         disabled={props.disabled}
         style={styles.button}
       >
-        <i className={"pi pi-upload"} style={props.errorIconColor? {color: '#6B3374'} : {color:(props.name && props.extension) ? '#6B3374':'#6B3374'}} />
+        <i className={"pi pi-upload"} style={props.errorIconColor? {color: 'var(--primary-color)'} : {color:(props.name && props.extension) ? 'var(--primary-color)':'var(--primary-color)'}} />
       </Button>
     </div>
   );

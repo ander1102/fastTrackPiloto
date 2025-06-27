@@ -98,7 +98,7 @@ export default function UsersAccess(props: UsersAccessProps) {
                       {canModify && (  <Button
                         type="button"
                         className={`button ${!isNone ? "active" : ""} `}
-                        icon={`pi pi-check ${!isNone ? "text-[#BA81C4]" : "text-[#6A6D74]"}`}
+                        icon={`pi pi-check ${!isNone ? "text-tertiary-color" : "text-[#6A6D74]"}`}
                         text
                         raised
                         severity="info"

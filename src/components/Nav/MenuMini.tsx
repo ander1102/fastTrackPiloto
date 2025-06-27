@@ -30,7 +30,7 @@ const MenuItemComponent = ({ item, isSelected }: ItemProps) => {
       key={item.keyname}
       title={item.nombre}
       className={`flex w-full justify-center`}
-      style={isSelected ? { backgroundColor: '#BA81C4', borderRadius: 10}: {cursor: 'pointer', color: '#FFF'}}
+      style={isSelected ? { backgroundColor: 'var(--tertiary-color)', borderRadius: 10}: {cursor: 'pointer', color: '#FFF'}}
     >
       <Tooltip target={`.${tooltipClass}`} />
       {item.pathname ? (

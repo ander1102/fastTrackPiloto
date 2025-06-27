@@ -35,9 +35,9 @@ const MenuItemComponent = ({
     <li
       className={`justify-between flex py-[5px]`}
       style={isSelected ? 
-        { backgroundColor: '#bca3c0', borderRadius: 10, marginTop: isSubLink && isShowDrop ? 5 : 0 }
+        { backgroundColor: 'var(--tertiary-color)', borderRadius: 10, marginTop: isSubLink && isShowDrop ? 5 : 0 }
           : 
-        {cursor: 'pointer', color: '#FFF'}}
+        {cursor: 'pointer', color: 'var(--white-color)'}}
       key={item.keyname}
     >
       {isLink && (

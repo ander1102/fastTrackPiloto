@@ -70,7 +70,7 @@ export default function UserAvatarImage({
         },
       }}
       style={{
-        backgroundColor: "#6B3374",
+        backgroundColor: "var(--primary-color)",
         borderRadius: "50%",
         color: "#FFF",
       }}

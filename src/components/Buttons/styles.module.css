@@ -71,7 +71,7 @@
   color: white !important;
 }
 .ButtonConfirm {
-  background-color: #6B3374 !important;
+  background-color: var(--primary-color) !important;
   color: white !important;
   min-width: 185px;
   height: 45px;
@@ -103,7 +103,7 @@
 }
 
 .ButtonNewSecundary {
-  background-color: #6B3374 !important;
+  background-color: var(--primary-color) !important;
   border: none !important;
   border-radius: 5px !important;
   min-width: 200px !important;
@@ -114,7 +114,7 @@
 }
 
 .ButtonNew {
-  background-color: #6B3374 !important;
+  background-color: var(--primary-color) !important;
   border: none !important;
   border-radius: 5px !important;
   width: 200px !important;

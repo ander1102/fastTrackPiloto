@@ -20,11 +20,11 @@ export function OneLineAccordion({
       <div
         {...props}
         className={`relative max-w-[400px] w-full h-[2px] ${className ?? ""}`}
-        style={{ backgroundColor: bgColor, ...props.style }}
+        style={{ backgroundColor: "var(--tertiary-color)", ...props.style }}
       >
         <Button
           className="!absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 !p-0 !rounded-full"
-          style={{ backgroundColor: bgColor, color: iconColor }}
+          style={{ backgroundColor: "var(--tertiary-color)", color: "var(--primary-color)" }}
           onClick={() => setIsOpen((prevValue) => !prevValue)}
         >
           <i

@@ -104,7 +104,7 @@
 }
 
 .spanPurpleColor{
-  color: #6B3374;
+  color: var(--primary-color);
   font-size: 16px;
 }
 

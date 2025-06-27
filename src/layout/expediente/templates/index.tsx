@@ -100,7 +100,7 @@ export const FormItemFulfillment = ({
               type="button"
               className={`button ${active === true ? "active" : ""} `}
               style={{borderRadius: 6}}
-              icon={`pi pi-check ${active ? "text-[#6B3374]" : "text-[#6A6D74]"}`}
+              icon={`pi pi-check ${active ? "text-primary-color" : "text-[#6A6D74]"}`}
               text
               raised
               severity="info"

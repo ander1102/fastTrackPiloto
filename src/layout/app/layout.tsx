@@ -60,7 +60,7 @@ export const PageFormTitle = ({
   return (
     <div className="flex items-center">
       {children}
-      <p className="text-2xl text-[#6B3374] flex items-center cursor-pointer">
+      <p className="text-2xl text-primary-color flex items-center cursor-pointer">
         {icon && <SVG.ArrowLeft className={styles.arrowIcon} />}
 
         {title}
@@ -69,8 +69,8 @@ export const PageFormTitle = ({
         <i
           className={
             disabled === true
-              ? "pi pi-pencil ml-3 cursor-pointer text-[#6B3374]"
-              : "pi pi-check ml-3 cursor-pointer text-[#6B3374]"
+              ? "pi pi-pencil ml-3 cursor-pointer text-primary-color"
+              : "pi pi-check ml-3 cursor-pointer text-primary-color"
           }
 
           onClick={onEditIconClick}

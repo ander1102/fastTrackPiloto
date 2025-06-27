@@ -57,7 +57,7 @@ export default function Terminal() {
 
   return (
     <>
-      <p className="text-[#6B3374] text-xl font-medium mb-5">Terminal</p>
+      <p className="text-primary-color text-xl font-medium mb-5">Terminal</p>
 
       <Grid lg={3} gap={3}>
         <ClientField field={FIELD.IDAGEP_ADQUIRIENTE} />
@@ -116,7 +116,7 @@ export default function Terminal() {
       {
         !isNew && (
           <>
-          <p className="text-[#386EB1] text-xl font-medium my-5">AMEX</p>
+          <p className="text-primary-color text-xl font-medium my-5">AMEX</p>
             <Checkbox disabled={formProps.disabled[clientProps.activeTab ?? 0] || amex} name="amex" onChange={(e:CheckboxChangeEvent) => handleChangeAmexSupport(e)} checked={amex}></Checkbox>
             <label htmlFor="amex" className="ml-2">Solicitar soporte para Amex</label>
           </>

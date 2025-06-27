@@ -15,7 +15,7 @@ export function DetailExpedienteHeader({person, ...item}: DetailExpedienteHeader
       <div className="flex flex-col">
         <div className="">
             <div className="flex items-center">
-            <div className="bg-[#6B3374] rounded-full h-16 w-16 flex justify-center items-center text-white">
+            <div className="bg-primary-color rounded-full h-16 w-16 flex justify-center items-center text-white">
                 <p className="flex text-center align-middle text-4xl">
                 {item.nombre && item.nombre.substring(0, 2)}
                 </p>
@@ -31,7 +31,7 @@ export function DetailExpedienteHeader({person, ...item}: DetailExpedienteHeader
         </p>
       </div>
       <div style={{fontSize: 24}}>
-        Tipo de persona: <span style={{color:"#6B3374"}}>{renamePersonType[person]}</span>
+        Tipo de persona: <span style={{color:"var(--primary-color)"}}>{renamePersonType[person]}</span>
       </div>
     </section>
   );

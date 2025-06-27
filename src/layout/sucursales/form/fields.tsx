@@ -73,7 +73,7 @@ export default function SucursalesFields({
 
   return (
     <>
-      <p className="text-[#6B3374] text-xl mb-5">Detalle de la sucursal</p>
+      <p className="text-primary-color text-xl mb-5">Detalle de la sucursal</p>
       <Grid sm={1} md={3} lg={3} gap={3} style={{marginBottom: 20}}>
         <FormItem label="Nombre *">
           <InputText

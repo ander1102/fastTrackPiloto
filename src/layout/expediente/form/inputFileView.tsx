@@ -97,7 +97,7 @@ export default function InputFile(props: TextInputProps) {
             disabled={(props.name && props.extension) ?false :true}
             style={styles.button}
         >
-            <i className={"pi pi-eye"} style={{color:(props.name && props.extension) ?'#6B3374':'#6B3374'}} />
+            <i className={"pi pi-eye"} style={{color:(props.name && props.extension) ?'var(--primary-color)':'var(--primary-color)'}} />
         </Button>
     </div>
   );

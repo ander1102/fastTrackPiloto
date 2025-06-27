@@ -53,7 +53,7 @@ export default function DetailClienteoHeader({id_company, client, nombre, saldo,
       <div className="w-full flex flex-col h-3/5">
         <div className="w-full flex justify-between ">
           <div className="w-6/12 flex items-center">
-            <div className="bg-[#6B3374] rounded-full h-16 w-16 flex justify-center items-center text-white">
+            <div className="bg-primary-color rounded-full h-16 w-16 flex justify-center items-center text-white">
               <p className="flex text-center align-middle text-4xl">
                 {nombre && nombre.substring(0, 2)}
               </p>

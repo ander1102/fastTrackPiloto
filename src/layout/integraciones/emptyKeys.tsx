@@ -53,7 +53,7 @@ export const EmptyIntegrationKeys: FC<IEmptyIntegrationKeys> = ({
         Aún no has generado <b>API Keys</b> para tu aplicación
       </h3>
       <Button
-        className="w-56 !border-none !bg-[#6B3374] justify-center hover:!opacity-80"
+        className="w-56 !border-none !bg-primary-color justify-center hover:!opacity-80"
         loading={isLoading}
         onClick={handleCreateEcommerce}
       >

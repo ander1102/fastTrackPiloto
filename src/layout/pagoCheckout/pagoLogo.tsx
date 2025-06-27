@@ -43,8 +43,7 @@ export function PagoLogo(props: checkoutProps) {
               Av. Roble #660, S Torre Cytrus P3 NA 0, Colonia Valle del Campestre, C.P: 66265 San Pedro Garza García, Nuevo León, México.
             </p>
             <div
-              className="h-1 rounded-b-md absolute bottom-0 left-0 right-0"
-              style={{background: "#9950A6"}}
+              className="h-1 rounded-b-md absolute bottom-0 left-0 right-0 bg-secondary-color"
             ></div>
           </div>
         </div>

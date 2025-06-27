@@ -13,7 +13,7 @@ export const ConfirmLogout = ({visible, setVisible, onLogout}: any) => {
           <SVG.LogoutIcon/>
         </div>
         <div className="flex justify-center">
-          <h1 style={{color: '#6B3374', fontSize: '27px'}}>Cerrar sesión</h1>
+          <h1 style={{color: 'var(--primary-color)', fontSize: '27px'}}>Cerrar sesión</h1>
         </div>
         <p className="m-0 flex justify-center">
           ¿Estás seguro de que quiere cerrar sesión?

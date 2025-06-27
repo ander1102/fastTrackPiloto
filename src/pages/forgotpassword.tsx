@@ -68,7 +68,7 @@ export default function ForgotPassword() {
               paddingBottom: 13,
               textAlign: "center",
               justifyContent: "center",
-              backgroundColor: "#6B3374",
+              backgroundColor: "var(--primary-color)",
               color: '#FFF',
               borderRadius: 25,
               width: 188.5,

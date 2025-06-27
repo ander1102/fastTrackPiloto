@@ -1,11 +1,11 @@
 .btnDownload{
-  background-color: #6B3374;
+  background-color: var(--primary-color);
   color:#FFF;
   border-color: transparent;
   margin-right: 20px;
 }
 .btnDownload:hover{
-  background-color: #6B3374!important;
+  background-color: var(--primary-color)!important;
   opacity: 0.9;
   color:#FFF;
   border-color: transparent!important;

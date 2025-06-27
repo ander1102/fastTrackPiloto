@@ -348,7 +348,7 @@ function TransactionDetailsModal({
             />
           </div>
 
-          <h2 className="text-2xl text-center text-[#6B3374] mb-2">
+          <h2 className="text-2xl text-center text-primary-color mb-2">
             Detalle de la transacción
           </h2>
 
@@ -483,7 +483,7 @@ function Detail({ label, value }: DetailProps) {
   return (
     <div className="py-1 flex justify-between">
       <span className="text-sm text-[#5A5A5A]">{label}</span>
-      <span className="text-sm text-[#6B3374] font-[500]">{value}</span>
+      <span className="text-sm text-primary-color font-[500]">{value}</span>
     </div>
   );
 }

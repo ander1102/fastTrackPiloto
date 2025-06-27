@@ -21,7 +21,7 @@ export const TabsExpediente = (props: any) => {
     <>
       <div className="flex items-center">
         { value !== null && <Image alt="backArrow" style={{cursor: 'pointer', marginRight: 10, width: 20, height: 20}} src={require('../../../../public/Images/backArrow.png')} onClick={() => {setValue(null); props.handleCatchInternalTabs(null)}}/> }
-        <span className="text-[#6B3374] text-xl leading-6 font-medium">Expediente</span>
+        <span className="text-primary-color text-xl leading-6 font-medium">Expediente</span>
       </div>
       <SelectButton
         className="my-5"

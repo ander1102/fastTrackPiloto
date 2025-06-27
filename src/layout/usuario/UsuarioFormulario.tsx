@@ -147,7 +147,7 @@ export default function UsuarioFormulario(props: UserFormProps) {
         permission={props.permission}
         submitted={submitted}
       />
-      <p className="text-xl text-[#6B3374] my-5">Selecciones habilitadas </p>
+      <p className="text-xl text-primary-color my-5">Selecciones habilitadas </p>
       <UsersAccess
         permission={props.permission}
         user={info}

@@ -46,11 +46,11 @@ function LiquidacionDetailsModal (props: any) {
   };
 
   const getStylesTotal = (rowData : any) => {
-    return <span style={{color: rowData.name === 'Depósito' ? '#6B3374' : ''}}>{rowData.name}</span>
+    return <span style={{color: rowData.name === 'Depósito' ? 'var(--primary-color)' : ''}}>{rowData.name}</span>
   }
 
   const getStylesTotal2 = (rowData : any) => {
-    return <span style={{color: rowData.name === 'Depósito' ? '#6B3374' : ''}}>{rowData.id}</span>
+    return <span style={{color: rowData.name === 'Depósito' ? 'var(--primary-color)' : ''}}>{rowData.id}</span>
   }
   const isObjectEmpty= (obj: any)=>{
     return Object.keys(obj).length === 0 && obj.constructor === Object;
@@ -128,7 +128,7 @@ function LiquidacionDetailsModal (props: any) {
       breakpoints={{ '960px': '75vw', '641px': '100vw' }}
       header={
         <div className="dialog-header">
-          <h2 className="dialog-title !text-[#6B3374]">Detalle de liquidación</h2>
+          <h2 className="dialog-title !text-primary-color">Detalle de liquidación</h2>
           <div>
             <Button loading={load} className={`mr-5 ${styles.btnDownload}`} onClick={() =>downloadExcel()} aria-controls="popup_menu_left" aria-haspopup>
               <Image src="/Images/svg/ico/export.svg" width={15} height={12} alt="" className={ load ? "ml-2 mr-2":"mr-2"}/>
@@ -139,7 +139,7 @@ function LiquidacionDetailsModal (props: any) {
       }
     >
       <div className="mt-[30px]">
-        <span>La liquidación corresponde a las transacciones realizadas el <span style={{color: '#6B3374', fontSize: '14px', fontWeight: 700}}>{DateDDMMYYHHMMA(props.item.fecha)}</span></span>
+        <span>La liquidación corresponde a las transacciones realizadas el <span style={{color: 'var(--primary-color)', fontSize: '14px', fontWeight: 700}}>{DateDDMMYYHHMMA(props.item.fecha)}</span></span>
         <DataTable value={data} tableStyle={{ width: '100%' }} className="deposit-details" id="deposit-details">
           <Column key={1} field={"name"} body={getStylesTotal} header={"Concepto"} style={{ maxWidth: '150px' }}/>
           <Column key={2} field={"id"} body={getStylesTotal2} alignHeader={'center'} bodyStyle={{ textAlign: 'center' }} header={"Cantidad / Monto"} />

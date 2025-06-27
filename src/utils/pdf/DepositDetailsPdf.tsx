@@ -36,11 +36,11 @@ ITransactionDetailsPdf
   ]
   
   const getStylesTotal = (rowData : any) => {
-    return <span style={{ fontWeight: rowData.name === 'Depósito' ? "bold" : 500 , color: rowData.name === 'Depósito' ? '#6B3374' : ''}}>{rowData.name}</span>
+    return <span style={{ fontWeight: rowData.name === 'Depósito' ? "bold" : 500 , color: rowData.name === 'Depósito' ? 'var(--primary-color)' : ''}}>{rowData.name}</span>
   }
   
   const getStylesTotal2 = (rowData : any) => {
-    return <span style={{fontWeight: rowData.name === 'Depósito' ? "bold" : 500, color: rowData.name === 'Depósito' ? '#6B3374' : ''}}>{rowData.id}</span>
+    return <span style={{fontWeight: rowData.name === 'Depósito' ? "bold" : 500, color: rowData.name === 'Depósito' ? 'var(--primary-color)' : ''}}>{rowData.id}</span>
   }
 
   const FormatDateTime = (item:any) => {
@@ -99,7 +99,7 @@ ITransactionDetailsPdf
             </div>
           </div>
         </div>
-        <span>El depósito realizado corresponde a las ventas realizadas del <span style={{color: '#6B3374', fontSize: '14px', fontWeight: 700}}>{`(${depositResume.primera_fecha} - ${depositResume.ultima_fecha})`}</span></span>
+        <span>El depósito realizado corresponde a las ventas realizadas del <span style={{color: 'var(--primary-color)', fontSize: '14px', fontWeight: 700}}>{`(${depositResume.primera_fecha} - ${depositResume.ultima_fecha})`}</span></span>
         <div>
           <DataTable value={data} tableStyle={{ minWidth: '50rem' }} className="deposit-details" id="deposit-details-yellow">
             <Column key={1} field={"name"} body={getStylesTotal} header={"Concepto"} style={{ maxWidth: '150px' }}/>

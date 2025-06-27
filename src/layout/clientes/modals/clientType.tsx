@@ -52,7 +52,7 @@ function ClientTypeModal({
     <Dialog
       header={
         <div className="dialog-header">
-          <h2 className="dialog-title !text-[#6B3374]">{title}</h2>
+          <h2 className="dialog-title !text-primary-color">{title}</h2>
         </div>
       }
       visible={show}

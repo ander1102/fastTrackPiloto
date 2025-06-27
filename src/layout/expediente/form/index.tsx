@@ -217,7 +217,7 @@ export function ExpedienteFormLayout(
 
 const renderTitle = (title: string) => (
   <div className="flex flex-row justify-between mt-5">
-    <p className="text-2xl flex items-center text-[#6B3374]">
+    <p className="text-2xl flex items-center text-primary-color">
       {title}
     </p>
   </div>

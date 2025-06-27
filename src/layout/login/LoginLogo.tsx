@@ -24,14 +24,13 @@ export function LoginLogo() {
           paddingBottom: 13,
           textAlign: "center",
           justifyContent: "center",
-          backgroundColor: "transparent",
           borderWidth: "1px",
           borderColor:'#FFF',
-          color: '#FFF',
           borderRadius: 25,
           marginTop: 45,
           marginRight: 62,
         }}
+        className="!bg-[transparent] text-light"
         onClick={handleCreateAccount}
       >
         Crear cuenta

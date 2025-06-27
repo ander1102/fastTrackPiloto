@@ -57,7 +57,7 @@ const Configuracion = (props: AppContextProps) => {
 
   const renderTitle = (title: string) => (
     <div className="flex items-center">
-      <p className={`text-2xl text-[#6B3374] cursor-pointer flex items-center`}>
+      <p className={`text-2xl text-primary-color cursor-pointer flex items-center`}>
         {title}
       </p>
     </div>
@@ -79,7 +79,7 @@ const Configuracion = (props: AppContextProps) => {
       <div className="flex justify-end">
         <div className="mt-5 mr-5">
           <ButtonLoader
-            style={{ background: "#6B3374", border: "#6B3374", width: 200 }}
+            style={{ background: "var(--primary-color)", border: "var(--primary-color)", width: 200 }}
             loading={formik.isSubmitting}
             onClick={(event) => {
               event.preventDefault();
@@ -259,7 +259,7 @@ const Configuracion = (props: AppContextProps) => {
                       <p
                         className={"text-lg mb-5"}
                         style={{
-                          color: "#6B3374",
+                          color: "var(--primary-color)",
                           fontWeight: 500,
                           fontSize: 20,
                         }}

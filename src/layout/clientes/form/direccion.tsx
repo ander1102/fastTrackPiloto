@@ -36,7 +36,7 @@ export default function ClientDireccion({
   let enClientes = router.pathname.includes('/dashboard/clientes')
   return (
     <>
-      <p className="text-lg mb-5" style={{color: "#6B3374", fontWeight: 500, fontSize:20}}>Dirección Fiscal</p>
+      <p className="text-lg mb-5" style={{color: "var(--primary-color)", fontWeight: 500, fontSize:20}}>Dirección Fiscal</p>
       <div style={{backgroundColor: '#FAF9F7', padding: '20px 20px'}}>
 
         <Grid sm={1} md={1} lg={1} gap={1}>

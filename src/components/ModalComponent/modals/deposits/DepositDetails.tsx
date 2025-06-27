@@ -129,11 +129,11 @@ function DepositDetailsModal({
     );
   };
   const getStylesTotal = (rowData : any) => {
-    return <span style={{color: rowData.name === 'Depósito' ? '#6B3374' : ''}}>{rowData.name}</span>
+    return <span style={{color: rowData.name === 'Depósito' ? 'var(--primary-color)' : ''}}>{rowData.name}</span>
   }
 
   const getStylesTotal2 = (rowData : any) => {
-    return <span style={{color: rowData.name === 'Depósito' ? '#6B3374' : ''}}>{rowData.id}</span>
+    return <span style={{color: rowData.name === 'Depósito' ? 'var(--primary-color)' : ''}}>{rowData.id}</span>
   }
 
   useEffectAsync(async() => {
@@ -165,7 +165,7 @@ function DepositDetailsModal({
     <Dialog
       header={
         <div className="dialog-header">
-          <h2 className="dialog-title" style={{ color: '#6B3374'}}>Detalle de depósito</h2>
+          <h2 className="dialog-title" style={{ color: 'var(--primary-color)'}}>Detalle de depósito</h2>
           <div>
             <Menu model={items} popup ref={menuLeft} id="popup_menu_left" />
             <Button className={`mr-5 ${styles.btnDownload}`} onClick={(event) => menuLeft?.current?.toggle(event)} aria-controls="popup_menu_left" aria-haspopup>
@@ -232,7 +232,7 @@ function DepositDetailsModal({
           </TabPanel>
           <TabPanel header="Resumen">
             <div>
-              <span>El depósito realizado corresponde a las ventas del <span style={{color: '#6B3374', fontSize: '14px', fontWeight: 700}}>{`(${item.primera_fecha} - ${item.ultima_fecha})`}</span></span>
+              <span>El depósito realizado corresponde a las ventas del <span style={{color: 'var(--primary-color)', fontSize: '14px', fontWeight: 700}}>{`(${item.primera_fecha} - ${item.ultima_fecha})`}</span></span>
               <DataTable value={data} tableStyle={{ minWidth: '50rem' }} className="deposit-details" id="deposit-details">
                 <Column key={1} field={"name"} body={getStylesTotal} header={"Concepto"} style={{ maxWidth: '150px' }}/>
                 <Column key={2} field={"id"} body={getStylesTotal2} alignHeader={'center'} bodyStyle={{ textAlign: 'center' }} header={"Cantidad / Monto"} />

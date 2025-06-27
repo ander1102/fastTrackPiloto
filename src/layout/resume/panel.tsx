@@ -172,7 +172,7 @@ export default function ResumePanel({
     <>
       <section className="my-4">
         <div className="flex-col KpiContainerStart">
-          <p className="text-2xl mb-2" style={{color: '#6B3374'}}>Periodo</p>
+          <p className="text-2xl mb-2 text-primary-color">Periodo</p>
           <p className="text-gray-600 text-base">
             {convertToDate(RESUME_PERIOD_TITLE[resumeKey](date()).toString())}
           </p>

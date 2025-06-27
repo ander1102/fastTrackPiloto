@@ -36,7 +36,7 @@ export function ExpedienteRepresentante({
 
   return (
     <>
-      <p className="text-[#6B3374] text-lg mt-10 mb-5">Representante legal</p>
+      <p className="text-primary-color text-lg mt-10 mb-5">Representante legal</p>
       <TabView id="expedienteRepresentantes" >
         {values.infoRepresentantes
           ? values.infoRepresentantes.map((representative: any, index: number) => {

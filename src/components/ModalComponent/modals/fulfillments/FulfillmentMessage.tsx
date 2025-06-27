@@ -57,7 +57,7 @@ function FulfillmentMessage({
           <Button
             label="Completar"
             style={{
-              backgroundColor: "#6B3374",
+              backgroundColor: "var(--primary-color)",
               border: "none",
               padding: "10px 50px",
               margin: "10px",
