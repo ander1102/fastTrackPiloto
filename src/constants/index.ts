@@ -1,6 +1,7 @@
 import { TooltipOptions } from "primereact/tooltip/tooltipoptions";
 import { ToastOptions } from "react-toastify";
 import { DataTableQuery } from "@app/types";
+import { assetsConfig } from "../../assets.config";
 // TEST URL
 export const AGREGADOR_API_URL = "https://alphawlapitest.efevoopaylbda.com/api/apiv0/agrs";
 
@@ -14,25 +15,17 @@ export const ZENDDESK_EFEVOO_URL = "https://centroefevoopay.zendesk.com/hc/es-41
 
 export const AGREGADOR_TRANSACTION_WS = "wss://test-agrswss.efevoo.app/api0";
 
-export const EFEVOOPAY_LOGO_PATH = "/Images/menu/efevoopay.png";
+export const EFEVOOPAY_LOGO_PATH = assetsConfig.sidebar.logo;
 
 export const EFEVOOPAY_WHITE_LOGO_PATH = "/Images/menu/efevoopay-white.png";
 
-export const EFEVOOPAY_LOGO_MINI_PATH = "/Images/menu/thunderPayMini.png";
+export const EFEVOOPAY_LOGO_MINI_PATH = assetsConfig.sidebar.logo_mini;
 
-export const EFEVOOPAY_BLACK_LOGO_PATH = "/Images/thunderpaylogin.png";
-
-export const MASTERCARD_LOGO_PATH = "/Images/paymentLogos/Master.svg";
-
-export const VISA_LOGO_PATH = "/Images/paymentLogos/Visa.svg";
-
-export const PCI_LOGO_PATH = "/Images/paymentLogos/PCI.svg";
-
-export const CNBV_LOGO_PATH = "/Images/paymentLogos/CNBV.svg";
+export const EFEVOOPAY_BLACK_LOGO_PATH = assetsConfig.login.logo;
 
 export const COUNTRY_REST_API = "https://restcountries.com/v3.1";
 
-export const APP_TITLE = "Thunderpay";
+export const APP_TITLE = assetsConfig.title;
 
 export const excludePaths = ["/", "/forgotpassword", "/pagoCheckout","pagosRecurrentes","pagosRecurrentesPdf"] ;
 

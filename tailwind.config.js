@@ -1,4 +1,5 @@
 import colors from "tailwindcss/colors";
+import {colorsConfig} from './assets.config.ts'
 
 /** @type {import('tailwindcss').Config} */
 export const content = ["./src/**/*.{js,ts,jsx,tsx}"];
@@ -57,10 +58,10 @@ export const theme = {
     "gray-dark": "#414141",
     "green-dark": "#268A67",
     "gray-border": "#E1E5E7",
-    "primary-color":"#f44336",
-    "secondary-color":"#1b31ef",
-    "tertiary-color":"#2ef203",
-    "quaternary-color": "#faf5fc",
+    "primary-color": colorsConfig.primary,
+    "secondary-color": colorsConfig.secondary,
+    "tertiary-color": colorsConfig.tertiary,
+    "quaternary-color":  colorsConfig.quaternary,
   },
 };
 export const plugins = [];
@@ -69,4 +70,5 @@ export const plugins = [];
 // Secondary_COLOR: #9950A6
 // Tertiary_COLOR: #BA81C4
 // cuarto_color: #faf5fc
-// #FAF5FB !important
+// background_light_table: #FAF5FB !important
+// background_input_file: #DAC1E0

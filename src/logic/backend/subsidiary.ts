@@ -23,7 +23,7 @@ export const SubsidiaryControllers = {
   update: (body: SubsidiaryPost) =>
     Call<SubsidiaryPostResponse>("/api/subsidiary/update", {
       headers: getTokenBearer(),
-      method: "PUT",
+      method: "POST",
       body,
     }),
   getTotalRecords: (idagep_empresa: number, idagep_usuarios: number) =>

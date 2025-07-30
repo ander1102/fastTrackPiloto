@@ -9,6 +9,7 @@ import styles from "@app/components/ModalComponent/modal.module.css";
 import Image from "next/image";
 import { Button } from "@app/components/Buttons";
 import { useRouter } from "next/router";
+import { assetsConfig } from "../../../../../assets.config";
 
 interface FulfillmentMessageProps extends ViewProps {}
 function FulfillmentMessage({
@@ -32,7 +33,7 @@ function FulfillmentMessage({
       <div className="flex flex-col items-center">
         <Image
           alt=""
-          src={"/Images/svg/cumplimiento.svg"}
+          src={assetsConfig.resumen.cumplimientoImg}
           width={350}
           height={200}
         />

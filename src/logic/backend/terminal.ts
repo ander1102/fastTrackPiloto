@@ -41,13 +41,13 @@ export const TerminalControllers = {
   assignAdmin: (body: TerminalAssignAdmin) =>
     Call("/api/terminal/assign/admin", {
       headers: getTokenBearer(),
-      method: "PUT",
+      method: "POST",
       body,
     }),
   assignClient: (body: TerminalAssignClient) =>
     Call("/api/terminal/assign/client", {
       headers: getTokenBearer(),
-      method: "PUT",
+      method: "POST",
       body,
     }),
   unassignClient: (body: TerminalUnassignAdmin) =>

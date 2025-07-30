@@ -36,6 +36,7 @@ import {
 } from ".";
 import { ORIGEN_OPTIONS } from "./client";
 import { TRANSACTION_REJECTED_TYPE_OPTIONS } from "./rejected";
+import { colorsReports, dailyReports } from "../../assets.config";
 
 export interface DateLabel {
   values: number[];
@@ -214,11 +215,11 @@ export namespace ReportResumeConstants {
   };
 
   export const REPORT_RESUME_ENTITY_COLORS = [
-    "#6B3374",
-    "#9950A6",
-    "#DAC1E0",
-    "#414141",
-    "#83858A",
+    colorsReports.color_1,
+    colorsReports.color_2,
+    colorsReports.color_3,
+    colorsReports.color_4,
+    colorsReports.color_5,
   ];
 
   export const getReportPeriod = (
@@ -277,7 +278,7 @@ export namespace ReportResumeConstants {
           label: "",
           data: totalData.map((x) => x.total),
           fill: false,
-          backgroundColor: ["#DAC1E0"],
+          backgroundColor: [dailyReports.color],
           tension: 0.4,
           borderRadius: 50,
         },

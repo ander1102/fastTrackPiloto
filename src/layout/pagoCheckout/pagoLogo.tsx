@@ -4,6 +4,7 @@ import styles from "./Pago.module.css";
 import PhoneIcon from "@app/layout/pagoCheckout/icons/phone";
 import AddressIcon from "@app/layout/pagoCheckout/icons/address";
 import LocationIcon from "@app/layout/pagoCheckout/icons/location";
+import { assetsConfig } from "../../../assets.config";
 
 interface checkoutProps {
   companyInfo: companyInfoProps;
@@ -34,13 +35,13 @@ export function PagoLogo(props: checkoutProps) {
               <span className="mr-3">
                 <PhoneIcon />
               </span>
-              +52 81 1993 3760
+              {assetsConfig.pagos_distancia.info.phone}
             </p>
             <p className="flex w-full text-white">
               <span className="mr-3">
                 <LocationIcon />
               </span>
-              Av. Roble #660, S Torre Cytrus P3 NA 0, Colonia Valle del Campestre, C.P: 66265 San Pedro Garza García, Nuevo León, México.
+              {assetsConfig.pagos_distancia.info.address}
             </p>
             <div
               className="h-1 rounded-b-md absolute bottom-0 left-0 right-0 bg-secondary-color"

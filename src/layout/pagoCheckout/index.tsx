@@ -20,7 +20,7 @@ export function PagoLayout(props: checkoutProps) {
       <div
         className="flex flex-col md:flex-row min-h-screen bg-cover bg-no-repeat bg-center"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgb(153 79 166 / 95%) 34%, rgb(107 51 116 / 95%) 100%), url(/Images/integrations/LinkDePagoFondo.png)`,
+          backgroundImage: `url(/Images/integrations/LinkDePagoFondo.png)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

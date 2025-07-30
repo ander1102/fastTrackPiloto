@@ -1,8 +1,9 @@
 import { ResumeInfoType } from "@app/types/Resume";
+import { colorsConfig } from "../../assets.config";
 
 export const CHART_BACKGROUND_COLORS: Record<ResumeInfoType, string> = {
-  date: "#6B3374",
-  month: "#6B3374",
+  date: colorsConfig.primary,
+  month: colorsConfig.primary,
 };
 export const CHART_BORDER_COLORS = [
   "rgb(255, 99, 132)",

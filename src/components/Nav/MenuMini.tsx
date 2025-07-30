@@ -6,7 +6,6 @@ import { useRouter } from "next/router";
 import { Button } from "../Buttons";
 import LogoutButton, { LogoutButtonProps } from "./LogoutButton";
 import { MenuItem, MenuItems } from "./MenuItems";
-import Portal from "../Portal";
 import { EFEVOOPAY_LOGO_MINI_PATH } from "@app/constants";
 import { ClientComponents } from "../Client";
 import { ScrollPanel } from "primereact/scrollpanel";

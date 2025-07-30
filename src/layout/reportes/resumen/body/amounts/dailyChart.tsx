@@ -8,6 +8,7 @@ import { ReportResumeContext } from "../../context";
 import LoaderView from "@app/components/Loader/loaderView";
 import Portal from "@app/components/Portal";
 import DescriptionCard from "@app/components/DescriptionCard";
+import { colorsConfig } from "../../../../../../assets.config";
 interface DailyChartProps extends Pick<AppContextProps, "userType" | "user"> {}
 
 export default function DailyChart({ user, userType }: DailyChartProps) {
@@ -62,7 +63,7 @@ export default function DailyChart({ user, userType }: DailyChartProps) {
         )}
       />
       <Portal id="_resume_report_description_cards">
-        <DescriptionCard title="Monto total diario" color="#DAC1E0" />
+        <DescriptionCard title="Monto total diario" color={colorsConfig.quinary} />
       </Portal>
     </LoaderView>
   );

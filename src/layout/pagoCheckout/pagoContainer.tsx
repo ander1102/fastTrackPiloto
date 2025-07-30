@@ -1,5 +1,6 @@
 import { ClientComponents } from "@app/components/Client";
 import {
+  APP_TITLE,
   EFEVOOPAY_WHITE_LOGO_PATH,
 } from "@app/constants";
 import React, { useEffect, useState } from "react";
@@ -10,6 +11,7 @@ import { FormItem } from "@app/components/FormManager/FormItem";
 import { toast } from "react-toastify";
 import { InputText } from "primereact/inputtext";
 import Image from "next/image";
+import { assetsConfig } from "../../../assets.config";
 
 interface checkoutProps {
   companyInfo?: companyInfoProps;
@@ -127,12 +129,12 @@ export function PagoContainer(props: checkoutProps) {
             >
               Pagar con&nbsp;&nbsp;{" "}
               {/* <img src={EFEVOOPAY_WHITE_LOGO_PATH} width={60} height={10} /> */}
-              <Image alt="fj" src="/Images/svg/botonCheckOut.svg" width={70} height={20}/>
+              <Image alt="" src={assetsConfig.pagos_distancia.img_btn_precheckout} width={70} height={20}/>
             </ButtonLoader>
           </div>
           <div className="mt-9 flex-col justify-center">
             <p className="text-center text-[#6A6D74]">
-              {new Date().getFullYear()} Thunderpay. Derechos Reservados.
+              {new Date().getFullYear()} {APP_TITLE}. Derechos Reservados.
             </p>
             {/* <a
               href="https://efevoopay.com/AvisoDePrivacidad"

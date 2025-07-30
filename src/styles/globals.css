@@ -161,9 +161,12 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --primary-color: #f44336 !important;
-  --secondary-color: #1b31ef !important;
+  --primary-color: #42d4abff !important;
+  --secondary-color: #efc11b !important;
   --tertiary-color: #2ef203 !important;
+  --quaternary-color: #faf5fc!important;
+  --quinary-color: #DAC1E0!important; /* border color inputFile*/
+  --background-light-primary:#f2b4ff!important; /* background color inputFile, header tables*/
   --deny-color: #f44336 !important;
   --white-color: #ffffff !important;
   --grey-1-color: #707070 !important;
@@ -525,7 +528,7 @@ a {
   padding: 15px 10px !important;
 }
 .datatable-custom .p-datatable-thead > tr > th {
-  background-color: #FAF5FB !important;
+  background-color: var(--background-light-primary) !important;
   color: var(--primary-color)!important;
   border: none !important;
   padding: 0px !important;
@@ -558,7 +561,7 @@ a {
   .p-paginator
   .p-paginator-pages
   .p-paginator-page.p-highlight {
-  background: #FAF5FB !important;
+  background: var(--background-light-primary) !important;
   border-color: none !important;
   color: var(--primary-color) !important;
 }
@@ -800,9 +803,9 @@ border-color: transparent!important;
 }
 
 .input-file.p-withDoc {
-  border-color: #DAC1E0;
-  outline: solid 1px #DAC1E0;
-  background-color: #FAF5FB;
+  border-color: var(--quinary-color);
+  outline: solid 1px var(--quinary-color);
+  background-color: var(--background-light-primary);
   border-radius: 5px;
   width: 75%;
   height: 42px;
@@ -811,9 +814,9 @@ border-color: transparent!important;
 }
 
 .input-file.p-noDoc {
-  border-color: #DAC1E0;
-  outline: solid 1px #DAC1E0;
-  background-color: #FAF5FB;
+  border-color: var(--quinary-color);
+  outline: solid 1px var(--quinary-color);
+  background-color: var(--background-light-primary);
   border-radius: 5px;
   width: 75%;
   height: 42px;
@@ -1061,7 +1064,7 @@ border-color: transparent!important;
   box-shadow: none;
 }
 .buttons-check .p-button-info.active {
-  background: #FAF5FB !important;
+  background: var(--background-light-primary)!important;
   border: 1px solid var(--tertiary-color) !important;
 }
 .buttons-check .p-button-danger.active {
@@ -1312,7 +1315,7 @@ border-color: transparent!important;
   > .p-datatable-thead
   > tr
   > th {
-  background: #FAF5FB !important;
+  background: var(--background-light-primary) !important;
   border-bottom: 1px solid var(--primary-color) !important;
 }
 
@@ -1362,7 +1365,7 @@ border-color: transparent!important;
   > tr
   > th {
   border-bottom: 1px solid var(--primary-color) !important;
-  background: #FAF5FB !important;
+  background: var(--background-light-primary) !important;
 }
 
 #transactions-pdf

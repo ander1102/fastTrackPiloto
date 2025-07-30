@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import { getStorageHash, LoginControllers } from "@app/logic/backend/login";
 
 import { UserContext } from "@app/context";
-import { DEFAULT_TOAST_CONFIGURATION, NOT_ACCESS_LOGIN } from "@app/constants";
+import { APP_TITLE, DEFAULT_TOAST_CONFIGURATION, NOT_ACCESS_LOGIN } from "@app/constants";
 import { ShowFetchResponseToast } from "@app/utils/DOM";
 import { UserControllers } from "@app/logic/backend/users";
 import Link from "next/link";
@@ -167,8 +167,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Thunderpay</title>
-        <meta name="description" content="Thunderpay" />
+        <title>{APP_TITLE}</title>
+        <meta name="description" content={APP_TITLE} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/mini2.png" />
       </Head>

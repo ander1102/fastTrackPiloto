@@ -6,7 +6,7 @@ import styles from "../Nav.module.css";
 import LogoutButton, { LogoutButtonProps } from "../LogoutButton";
 import { UserContextProps } from "@app/context";
 import MenuContainer from "./container";
-import EFEVOOPAY_LOGO_PATH from "../../../../public/Images/sideNav/logo_thunderpay.png";
+import { EFEVOOPAY_LOGO_PATH } from "@app/constants";
 import { ClientComponents } from "@app/components/Client";
 import { ScrollPanel } from "primereact/scrollpanel";
 import { PageSizeContext } from "@app/context/Size";

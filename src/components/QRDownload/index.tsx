@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { DEFAULT_TOAST_CONFIGURATION } from "@app/constants";
+import { assetsConfig } from "../../../assets.config";
 import { toPng, toBlob } from "html-to-image";
 export const useQRDownload = () => {
   const canvasQRRef = useRef(null);
@@ -30,7 +31,7 @@ export const useQRDownload = () => {
         const image1 = new Image();
         const image2 = new Image();
 
-        image1.src = "/Images/QRDownload/background.png";
+        image1.src = assetsConfig.pagos_distancia.qr_download_template;
         image2.src = dataURL;
 
         image1.onload = () => {

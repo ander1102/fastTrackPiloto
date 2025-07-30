@@ -95,7 +95,7 @@
 }
 
 .createDepositAmmount{
-  background-color: #FAF5FB; 
+  background-color: var(--background-light-primary); 
   flex-direction: row;
   display: flex;
   width: 40%;

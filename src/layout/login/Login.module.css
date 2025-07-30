@@ -17,7 +17,7 @@
 
 .LogoContainerBackground {
   background-color: var(--secondary-color);
-  background-image: url("/Images/logIn_thunderpay.png");
+  background-image: url("/Images/imagen_login.png");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -53,7 +53,7 @@
 @media screen and (max-width: 1300px) {
   .LogoContainerBackground {
     background-color: var(--secondary-color);
-    background-image: url("/Images/logIn_thunderpay.png");
+    background-image: url("/Images/imagen_login.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

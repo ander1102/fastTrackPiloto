@@ -4,6 +4,7 @@ import { User } from "@app/types/User";
 import useTruncateAmout from "@app/hooks/useTruncateAmount";
 import { maskText } from "@app/common/format";
 import { DATE_TIME_FORMAT, DATE_TIME_FORMAT_SHORT } from "@app/constants";
+import { assetsConfig } from "../../../assets.config";
 
 interface ITransactionDetailsPdf {
   firma: string;
@@ -37,7 +38,11 @@ const TransactionDetailsPdf = forwardRef<
       className="bg-white flex flex-col items-center p-4 place-content-center"
       ref={ref}
     >
-      <div className="w-[500px] h-[1000px] flex flex-col py-4 px-9 bg-center bg-cover bg-[url('/Images/transactions/ticket.svg')]">
+      <div className="w-[500px] h-[1000px] flex flex-col py-4 px-9 bg-center bg-cover"
+      style={{
+        backgroundImage: `url(${assetsConfig.transaccion.ticketTemplate})`,
+      }}
+      >
         <picture className="flex justify-center">
           <img alt="" src="/Images/thunderPay.png" height={70} width={130} />
         </picture>

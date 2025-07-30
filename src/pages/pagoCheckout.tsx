@@ -7,6 +7,7 @@ import "primeicons/primeicons.css"; //icons
 import useEffectAsync from "@app/hooks/useEffectAsync";
 import { PaymentControllers } from "@app/logic/backend/pagoCheckout";
 import { arrayBufferToBase64 } from "@app/common/format";
+import { APP_TITLE } from "@app/constants";
 
 export default function Home() {
   
@@ -54,8 +55,8 @@ export default function Home() {
   return (
     <>
         <Head>
-            <title>Centum Pay</title>
-            <meta name="description" content="Efevoo Pay" />
+            <title>{APP_TITLE}</title>
+            <meta name="description" content={APP_TITLE} />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/images/mini2.png" />
         </Head>

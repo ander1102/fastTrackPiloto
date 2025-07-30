@@ -43,15 +43,18 @@ export default function Terminal() {
   }
 
   const handleChangeAmexSupport = async(e: CheckboxChangeEvent) => {
-    setAmex(e.checked);
     let body = {
       idagep_empresa:id_company
     }
     const res = await ClientsControllers.updateStatusAmex(body)
-    if(res.response.msg === 'Cliente previamente registrado con AMEX'){
-      toast.info(res.response.msg); 
+    if(res.response.msg === 'Cliente previamente registrado con AMEX WL'){
+      toast.info(res.response.msg);
+    } else if(res.response.msg === 'Solicitud realizada'){
+      setAmex(true);
+      toast.success(res.response.msg);
     } else {
-      toast.success("Se envio la solicitud para soporte con AMEX");
+      setAmex(false);
+      toast.info(res.response.msg);
     }
   };
 
