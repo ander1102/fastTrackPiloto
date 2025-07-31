@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
+import { assetsConfig } from "../../../assets.config";
 
 interface ITransactionDetailsPdf {
   depositResume: any;
@@ -63,7 +64,7 @@ ITransactionDetailsPdf
       ref={ref}
     >
       <section className="flex-[3] mt-6">
-        <img alt="Logo" src={'/Images/thunderpay-purple.png'} width={150}/>
+        <img alt="Logo" src={assetsConfig.depositos.logo_pdf} width={150}/>
         <div style={{marginTop: 20}}>
           <h1 style={{fontSize: 22}}>Resumen de <span style={{fontWeight: 'bolder'}}>depósito</span></h1>
         </div>

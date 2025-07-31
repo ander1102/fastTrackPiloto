@@ -44,7 +44,7 @@ const TransactionDetailsPdf = forwardRef<
       }}
       >
         <picture className="flex justify-center">
-          <img alt="" src="/Images/thunderPay.png" height={70} width={130} />
+          <img alt="" src={assetsConfig.transaccion.logo_ticket} height={70} width={130} />
         </picture>
 
         <h1 className={`text-center font-bold mt-2 ${text["2xl"]}`}>

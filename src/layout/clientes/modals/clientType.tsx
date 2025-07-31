@@ -9,6 +9,7 @@ import { useMemo } from "react";
 import { createClientTypes } from "@app/constants/client";
 import { ClientTypeObj } from "@app/types/Clients";
 import { SVG } from "@app/components/svg";
+import { colorsConfig } from "../../../../assets.config";
 
 interface ClientTypeModalProps extends ViewProps<ClientPersona> {
   title:string
@@ -29,7 +30,7 @@ const Card = ({
     >
       <section
         className="border-b-2 w-full flex-[3] py-3 flex flex-col justify-between"
-        style={{ borderColor: '#DAC1E0' }}
+        style={{ borderColor: colorsConfig.quinary }}
       >
         {Icon && <Icon className="self-center h-[7rem]" />}
         <span className="text-left text-[1.5rem]">{name}</span>

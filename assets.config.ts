@@ -35,8 +35,12 @@ export const assetsConfig = {
   },
   transaccion:{
     ticketTemplate: "/Images/transactions/ticket.svg",
+    logo_ticket: "/Images/logo_ticket.png",
     checkImg: "/Images/transactions/check.svg",
     rejectImg: "/Images/transactions/rejected.svg",
+  },
+  depositos: {
+    logo_pdf: "/Images/logo_deposito_pdf.png"
   },
   pagos_distancia: {
     img_link_pago: "/Images/integrations/payment_link.svg",
