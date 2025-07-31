@@ -16,6 +16,7 @@ const INITIAL = (user: User): APIKeysIntegration => ({
   api_key: "",
   api_secret: "",
   api_totp: "",
+  api_hash: "",
   estatus: "",
   fechaEnt: "",
   idagep_empresa: user.idagep_empresa ?? 0,
@@ -34,6 +35,7 @@ const ApiKeyContent: {
   { label: "API KEY", keyValue: "api_key" },
   { label: "API SECRET", keyValue: "api_secret" },
   { label: "API TOTP", keyValue: "api_totp" },
+  { label: "API HASH", keyValue: "api_hash" },
 ];
 
 interface IntegrationsApiKeysProps {
@@ -115,7 +117,7 @@ export function IntegrationsApiKeys({ user }: IntegrationsApiKeysProps) {
               </div>
             ) : null}
           </div>
-          <div className="border-b-2 border-[#B8DAD7]"></div>
+          <div className="border-b-2 border-primary-color"></div>
         </div>
 
         {ApiKeyContent.map((ak) => (
@@ -131,14 +133,14 @@ export function IntegrationsApiKeys({ user }: IntegrationsApiKeysProps) {
         ))}
       </section>
 
-      {/* <Link
+      <Link
         className="w-36 h-10 mx-auto bg-[#3E3D3D] text-[#FFF] text-sm
         flex justify-center items-center rounded-xl hover:opacity-80 hover:bg-[#757A85]"
         href={`/pdf/Manual_de_Integracion_EfevooPay_${INTEGRATION_DOC_VERSION}.pdf`}
         target="_blank"
       >
         Descargar
-      </Link> */}
+      </Link>
     </article>
   );
 }
@@ -165,7 +167,6 @@ function ApiKeyRow({
   const onCopy = async (value: string) => {
     copyToClipboardNavigator(value);
   };
-
   return (
     <div className="flex flex-col gap-3">
       {keyValue === "api_key" ? (
@@ -191,14 +192,11 @@ function ApiKeyRow({
       ) : (
         <h3 className="text-[#268A67]">{label}</h3>
       )}
-
-      <div className="w-full border-b-2 border-[#B8DAD7]"></div>
-
+      <div className="w-full border-b-2 border-primary-color"></div>
       <div className="w-full flex justify-between items-center gap-5">
         <div className="max-w-80 text-[#4A5056] font-light text-sm break-all">
           {hide ? "*".repeat(20) : apiKeys[keyValue]}
         </div>
-
         <div className="flex gap-3">
           <div
             className={`flex items-center gap-3 transition-all duration-200 ${
@@ -206,7 +204,7 @@ function ApiKeyRow({
             }`}
           >
             <Button
-              className="!text-[14px] text-green-dark !px-3 !py-1 !bg-[#B8DAD7] !rounded-3xl hover:opacity-[.8] hover:!text-green-dark"
+              className="!text-[14px] text-green-dark !px-3 !py-1 !bg-secondary-color !rounded-3xl hover:opacity-[.8] hover:!text-primary-color"
               onClick={() => onCopy(apiKeys[keyValue])}
             >
               Copiar

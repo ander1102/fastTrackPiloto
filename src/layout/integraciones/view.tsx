@@ -5,7 +5,6 @@ import { TabPanel, TabView } from "primereact/tabview";
 import { IntegracionesHistorial } from "./historial";
 import { IntegrationLinks } from "./links";
 import { KpiContainer, KpiItem } from "@app/components/ViewKpis";
-
 import { IntegrationHistoryFilters } from "@app/types/Integrations";
 import { User } from "@app/types/User";
 import useCall from "@app/hooks/useCall";
@@ -72,8 +71,7 @@ export function IntegrationsView({ user }: IntegrationsViewProps) {
             value={CURRENCY_FORMAT.format(kpis.item?.promedioPorTicket ?? 0)}
           />
         </KpiContainer>
-
-        {/* <Link
+        <Link
           href="/dashboard/integraciones/documentacion"
           className="w-60 h-14 ml-auto border-b-4 border-[#65C986] p-4 bg-beige rounded
             flex items-center gap-3 hover:opacity-80"
@@ -94,7 +92,7 @@ export function IntegrationsView({ user }: IntegrationsViewProps) {
             width={20}
             height={14}
           />
-        </Link> */}
+        </Link>
       </section>
 
       <section className="flex-1 lg:flex">

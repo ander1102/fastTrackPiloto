@@ -21,6 +21,7 @@ import { TransactionsControllers } from "@app/logic/backend/transactions";
 import { DateDDMMYYHHMMA } from "@app/common/date";
 import { isDate } from "@app/common/format";
 import { DEFAULT_TOAST_CONFIGURATION } from "@app/constants";
+import { assetsConfig } from "../../../../../assets.config";
 
 const CIRCLE = [...Array(7)];
 
@@ -342,7 +343,7 @@ function TransactionDetailsModal({
           <div className="flex justify-center mb-2">
             <Image
               alt=""
-              src="/Images/transactions/check.svg"
+              src={assetsConfig.transaccion.checkImg}
               width={50}
               height={50}
             />

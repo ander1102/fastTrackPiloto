@@ -14,6 +14,7 @@ import { ReplaceObjectValue } from "@app/common/format";
 import { FormTitle } from "@app/layout/app/layout";
 import { TerminalControllers } from "@app/logic/backend/terminal";
 import { checkEmptyFields, ShowFetchResponseToast } from "@app/utils/DOM";
+import { colorsConfig } from "../../../../../assets.config";
 
 interface TerminalFormProps {
   title: string;
@@ -94,7 +95,7 @@ export function TerminalAdminForm({
     buttonAcceptProps: {
       className: "min-w-[200px] h-12",
       label: "Regresar a Disponible",
-      style: { backgroundColor: "#5840D1" },
+      style: { backgroundColor: colorsConfig.primary },
     },
     buttonCancelProps: {
       className: "min-w-[200px] h-12",

@@ -163,15 +163,15 @@ export const MenuItems: MenuItem[] = [
     getItem: (user) => _getItem(user, MODULE_KEYS.INTEGRACION),
     hideAdmin: false,
     },
-  // {
-  //   keyname: MODULE_KEYS.INTEGRACION_DOCUMENTATION,
-  //   nombre: "IntegracionDocumentation",
-  //   pathname: "/dashboard/integraciones/documentacion",
-  //   subRoute: MODULE_KEYS.INTEGRACION,
-  //   getItem: (user) => _getItem(user, MODULE_KEYS.INTEGRACION),
-  //   admin: USER_ADMINS,
-  //   hideAdmin: false,
-  // },
+  {
+    keyname: MODULE_KEYS.INTEGRACION_DOCUMENTATION,
+    nombre: "IntegracionDocumentation",
+    pathname: "/dashboard/integraciones/documentacion",
+    subRoute: MODULE_KEYS.INTEGRACION,
+    getItem: (user) => _getItem(user, MODULE_KEYS.INTEGRACION),
+    admin: USER_ADMINS,
+    hideAdmin: false,
+  },
   // Módulo de Reportes
   {
     keyname: MODULE_KEYS.REPORTES,

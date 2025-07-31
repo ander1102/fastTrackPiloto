@@ -14,6 +14,7 @@ import { DEFAULT_TOAST_CONFIGURATION } from "@app/constants";
 import { UserContext } from "@app/context";
 import { useQRDownload } from "@app/components/QRDownload";
 import QRCode from "react-qr-code";
+import { assetsConfig } from "../../../../assets.config";
 
 interface ModalLinkProps extends ViewProps {
   isLinkPago: boolean;
@@ -57,10 +58,10 @@ function modalLink({
 
   return (
     <Dialog
-      className="h-[760px] sm:w-[500px] sm:h-[800px] 2xl:w-[540px] 2xl:h-[840px] bg-[#f0f0f0] bg-center bg-[url('/Images/integrations/Base_figuras.svg')]"
+      className="h-[760px] sm:w-[500px] sm:h-[800px] 2xl:w-[540px] 2xl:h-[840px] bg-[#f0f0f0] bg-center  bg-[url('/Images/integrations/Base_figuras.svg')]"
       contentClassName="!bg-transparent"
       draggable={false}
-      style={{backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom right'}}
+      style={{backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom right', backgroundImage: `url(${assetsConfig.pagos_distancia.bg_modal_img}`}}
       headerClassName="!bg-transparent"
       maskStyle={visibleStyles}
       visible={show}

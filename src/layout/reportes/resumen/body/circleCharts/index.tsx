@@ -11,6 +11,7 @@ import { ResumeReportsBodyProps } from "..";
 import { ReportResumeContext } from "../../context";
 import ResumeTypeChartComponent from "../type";
 import { FiltersContainer, FiltersItem } from "@app/components/ViewFilters";
+import { colorsConfig } from "../../../../../../assets.config";
 interface ResumeReportCircleChartsProps extends ResumeReportsBodyProps {}
 
 export default function ResumeReportCircleCharts({
@@ -53,7 +54,7 @@ export default function ResumeReportCircleCharts({
           ResumeType.item?.countTotalDukpt ?? 0,
           ResumeType.item?.countDUKPT ?? 0,
         ],
-        color: "#BA81C4",
+        color: colorsConfig.primary,
       },
       {
         label: "Ligas de pago",
@@ -61,7 +62,7 @@ export default function ResumeReportCircleCharts({
           ResumeType.item?.countTotalTls ?? 0,
           ResumeType.item?.countTLS ?? 0,
         ],
-        color: "#9950A6",
+        color: colorsConfig.secondary,
       },
     ],
     [ResumeType.item]
@@ -75,7 +76,7 @@ export default function ResumeReportCircleCharts({
           ResumeType.item?.countTotalD ?? 0,
           ResumeType.item?.countD ?? 0,
         ],
-        color: "#BA81C4",
+        color: colorsConfig.primary,
       },
       {
         label: "Crédito",
@@ -83,7 +84,7 @@ export default function ResumeReportCircleCharts({
           ResumeType.item?.countTotalC ?? 0,
           ResumeType.item?.countC ?? 0,
         ],
-        color: "#9950A6",
+        color: colorsConfig.secondary,
       },
     ],
     [ResumeType.item]
@@ -97,7 +98,7 @@ export default function ResumeReportCircleCharts({
           ResumeType.item?.countTotalN ?? 0,
           ResumeType.item?.countNac ?? 0,
         ],
-        color: "#BA81C4",
+        color: colorsConfig.primary,
       },
       {
         label: "Internacional",
@@ -105,7 +106,7 @@ export default function ResumeReportCircleCharts({
           ResumeType.item?.countTotalI ?? 0,
           ResumeType.item?.countInt ?? 0,
         ],
-        color: "#9950A6",
+        color: colorsConfig.secondary,
       },
     ],
     [ResumeType.item]

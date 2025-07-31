@@ -17,6 +17,7 @@ export interface APIKeysIntegration {
   api_key: string;
   api_secret: string;
   api_totp: string;
+  api_hash: string;
   estatus: string;
   fechaEnt: string;
 }

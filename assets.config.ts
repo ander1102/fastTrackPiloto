@@ -1,5 +1,5 @@
 export const colorsConfig = {
-  primary: "#42d4abff",
+  primary: "#42d4ab",
   secondary:"#efc11b",
   tertiary: "#2ef203",
   quaternary: "#faf5fc",
@@ -21,6 +21,8 @@ export const dailyReports = {
 export const assetsConfig = {
   title: "Thunderpay",
   login: {
+    link: "https://thunderpay.info/home", //url www.ejemplo.com.mx
+    showlink: "Thunder gg", // como mostrar la url ejemplo.com
     imagen: "/Images/imagen_login.png",
     logo: "/Images/logo_login.png"
   },
@@ -37,6 +39,9 @@ export const assetsConfig = {
     rejectImg: "/Images/transactions/rejected.svg",
   },
   pagos_distancia: {
+    img_link_pago: "/Images/integrations/payment_link.svg",
+    img_ecommerce: "/Images/integrations/payment_negocio.svg",
+    bg_modal_img: "/Images/integrations/Base_figuras.svg",
     qr_download_template: "/Images/integrations/qr_template.png",
     pre_checkout_img: "/Images/integrations/LinkDePagoFondo.png",
     img_btn_precheckout: "/Images/integrations/botonCheckOut.svg",
@@ -44,5 +49,9 @@ export const assetsConfig = {
       phone: "+52 81 1993 3760",
       address: "Av. Roble #660, S Torre Cytrus P3 NA 0, Colonia Valle del Campestre, C.P: 66265 San Pedro Garza García, Nuevo León, México."
     }
+  },
+  clients: {
+    fisica: "/src/components/svg/clientFisica.tsx",
+    moral: "/src/components/svg/clientMoral.tsx"
   }
 }

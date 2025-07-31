@@ -8,6 +8,7 @@ import type { TransactionRejected } from "@app/types/Rejected";
 import TransactionModalBase from "./base";
 import TransactionItem from "./item";
 import { DateDDMMYYHHMMA } from "@app/common/date";
+import { assetsConfig } from "../../../../../assets.config";
 
 interface TransactionRejectedDetailsModalProps extends ViewProps {
   item: TransactionRejected;
@@ -20,7 +21,7 @@ function TransactionRejectedDetailsModal({
   return (
     <TransactionModalBase
       {...pageProps}
-      imageSrc="/Images/transactions/rejected.svg"
+      imageSrc={assetsConfig.transaccion.rejectImg}
       title="Detalle de la transacción rechazada"
       body1={
         <>

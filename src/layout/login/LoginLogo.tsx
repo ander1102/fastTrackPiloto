@@ -2,19 +2,20 @@ import React from "react";
 import styles from "./Login.module.css";
 import {ButtonLoader} from "@app/components/Buttons";
 import Link from "next/link";
+import { assetsConfig } from "../../../assets.config";
 
 export function LoginLogo() {
   const handleCreateAccount = () => {
-    return window.open("https://thunderpay.info/home", "_blank");
+    return window.open(assetsConfig.login.link, "_blank");
   };
 
   return (
     <div className={styles.LogoContainer}>
        <Link 
-        href={'https://thunderpay.info/home'}
+        href={assetsConfig.login.link}
         className={styles.linkLandingPage}
       >
-        thunderpay
+        {assetsConfig.login.showlink}
       </Link>
       <ButtonLoader
         style={{
@@ -35,7 +36,7 @@ export function LoginLogo() {
       >
         Crear cuenta
       </ButtonLoader>
-      <div className={`absoluteFill ${styles.LogoContainerBackground}`} />
+      <div className={`absoluteFill ${styles.LogoContainerBackground}`} style={{backgroundImage: `url(${assetsConfig.login.imagen})`}} />
     </div>
   );
 }
