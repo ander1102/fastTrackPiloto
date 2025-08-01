@@ -811,7 +811,7 @@ export const createClientTypes = (): ClientTypeObj[] => [
   },
   {
     value: "fisica",
-    name: "Persona Fisica",
+    name: "Persona Física",
     icon: "ClientFisica",
     color: "#608BC0",
   },
