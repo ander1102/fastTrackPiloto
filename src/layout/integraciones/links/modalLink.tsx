@@ -143,7 +143,7 @@ function modalLink({
               isLinkPago ? "un" : "su"
             } Link de ${linkType}`}
             body={`${client.nombre}\n\n${emailBody}\n\n${token}\n\n\n`}
-            url="Continúa con tu compra segura a través de Thunderpay."
+            url={`Continúa con tu compra segura a través de ${assetsConfig.title}.`}
           >
             <Image
               alt=""
