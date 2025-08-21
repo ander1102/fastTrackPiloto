@@ -16,11 +16,6 @@ import {
   TransactionFilters,
   TransactionSaldoEfevoopayBody,
 } from "@app/types/Transactions";
-import useWSClient from "@app/hooks/useWSClient";
-import {
-  WS_TRANSACTIONS_URL_CONFIGURATION,
-  WS_TRANSACTION_OPTIONS,
-} from "@app/constants/transactions";
 
 export const TRANSACTION_CONTEXT = "dashboard/transacciones";
 
@@ -66,10 +61,6 @@ function Transacciones({ user }: AppContextProps) {
     })
   );
 
-  const callTransactionWS = useWSClient<Transaction[]>(
-    () => WS_TRANSACTIONS_URL_CONFIGURATION(user),
-    WS_TRANSACTION_OPTIONS
-  );
   const callTransactionDate = useCall(TransactionsControllers, "date", () => ({
     initialParams: [filters] as [body: TransactionDateBody],
   }));
@@ -98,11 +89,8 @@ function Transacciones({ user }: AppContextProps) {
 
   //useMemo formateo
   const transactions: Transaction[] = useMemo(
-    () =>
-      isWs
-        ? callTransactionWS.data ?? []
-        : callTransactionDate.item?.transacciones ?? [],
-    [callTransactionWS, callTransactionDate]
+    () => callTransactionDate.item?.transacciones ?? [],
+    [callTransactionDate]
   );
 
   const totalRecords: number = useMemo(
@@ -111,7 +99,7 @@ function Transacciones({ user }: AppContextProps) {
   );
 
   const loading: boolean = useMemo(
-    () => (isWs ? callTransactionWS.isCalling : callTransactionDate.isCalling),
+    () => (callTransactionDate.isCalling),
     [callTransactionDate]
   );
 

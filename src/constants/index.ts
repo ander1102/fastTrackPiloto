@@ -13,8 +13,6 @@ export const BALACER_API_URL = "https://efevoopayloadbalancer-ecommerce.com";
 
 export const ZENDDESK_EFEVOO_URL = "https://centroefevoopay.zendesk.com/hc/es-419";
 
-export const AGREGADOR_TRANSACTION_WS = "wss://test-agrswss.efevoo.app/api0";
-
 export const EFEVOOPAY_LOGO_PATH = assetsConfig.sidebar.logo;
 
 export const EFEVOOPAY_WHITE_LOGO_PATH = "/Images/menu/efevoopay-white.png";

@@ -5,7 +5,6 @@ import { ExcelCell, ExcelOptions } from "@app/types/Excel";
 import { DropdownOptions } from "@app/types/Form";
 import { Transaction, TransactionExcelColumns,TransactionExcelClientColumns, TRANSACTION_PRODUCT } from "@app/types/Transactions";
 import { User } from "@app/types/User";
-import { AGREGADOR_TRANSACTION_WS } from ".";
 import { DROPDOWN_ALL } from "./form";
 
 export const TRANSACTION_CARD_TYPE_URL: Record<CARD_TYPE, string> = {
@@ -227,16 +226,6 @@ export const TRANSACTION_CLIENT_DEFAULT_SELECT: DropdownOptions<null>[] = [
     value: null,
   },
 ];
-
-export const WS_TRANSACTIONS_URL_CONFIGURATION = (
-  user: User
-): WS_URLOptions => ({
-  base: AGREGADOR_TRANSACTION_WS,
-  queryParams: {
-    entrada: user.persona.idagep_usuarios ?? 0,
-  },
-  subRoutes: ["all", "reporte"],
-});
 
 export const WS_TRANSACTION_OPTIONS: WS_Options<Transaction[]> = {
   update: (prev, next) => prev.length !== next?.length,
