@@ -58,6 +58,16 @@ export default async function ExcelExport(
             newItem.mensaje = decodeBase64Safe(newItem.mensaje);
           } catch {}
         }
+        if (newItem.nombreComercial) {
+          try {
+            newItem.nombreComercial = decodeBase64Safe(newItem.nombreComercial);
+          } catch {}
+        }
+        if (newItem.razonSocial) {
+          try {
+            newItem.razonSocial = decodeBase64Safe(newItem.razonSocial);
+          } catch {}
+        }
 
         return newItem;
       }),

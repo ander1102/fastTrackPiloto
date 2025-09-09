@@ -26,6 +26,13 @@ export const ExcelController = {
         if (newItem.mensaje) {
           newItem.mensaje = encodeBase64Safe(newItem.mensaje);
         }
+        if (newItem.nombreComercial) {
+          newItem.nombreComercial = encodeBase64Safe(newItem.nombreComercial);
+        }
+
+        if (newItem.razonSocial) {
+          newItem.razonSocial = encodeBase64Safe(newItem.razonSocial);
+        }
         return newItem;
       }),
     }));
